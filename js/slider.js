@@ -1,4 +1,4 @@
-$('.diagnostic_slider').slick({
+$('.diagnostic-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
@@ -26,7 +26,7 @@ $('.diagnostic_slider').slick({
     }]
 });
 
-$('.doctors_slider').slick({
+$('.doctors-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
@@ -46,7 +46,7 @@ $('.doctors_slider').slick({
     }]
 });
 
-$('.feedback_slider').slick({
+$('.feedback-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -71,7 +71,7 @@ $('.tech_slider').slick({
 
 });
 
-$('.licence_slider').slick({
+$('.licence-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,

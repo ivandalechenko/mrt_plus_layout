@@ -1,5 +1,718 @@
-.meow
-    background: rgba(1,2,3,.2)
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap')
 
-.sosalka
-    font-size: 22px
+$base_black_color: #444444
+$base_blue_color: #EFF5F8
+$btn_green_color: #04A2A2
+$base_green_color: #EBF4F4
+$base_yellow_color: #FFF8B7
+$base_grey_color: #F5F5F5
+
+.container
+    width: 1620px
+    margin: 0 auto
+
+h1, h2, h3, h4
+    font-style: normal
+    font-weight: 400
+h3
+    font-weight: 400
+    font-size: 34px
+    margin-top: 25px
+h4
+    margin-top: 25px
+    font-weight: 500
+    font-size: 20px
+    line-height: 150%
+    padding-left: 20px
+    border-left: 4px solid #147BB5
+p
+    margin-top: 25px
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    line-height: 150%
+img
+    object-fit: cover
+.mt50
+    margin-top: 50px
+.mt25
+    margin-top: 25px
+*
+    margin: 0
+    padding: 0
+    border: 0
+    outline: none
+    color: $base_black_color
+    box-sizing: border-box
+
+a
+    transition: .3s
+    text-decoration: none
+    color: #0070af
+
+    &:hover
+        transition: .3s
+    &:active
+        transition: .3s
+
+body
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    color: $base_black_color
+    padding-bottom: 200px
+.row
+    display: flex
+.first-banner
+    border-radius: 20px
+    height: 450px
+    background-color: #EBF4F4
+    background-image: url(../img/usp_background_element.png)
+    background-position: 1000px
+    background-repeat: no-repeat
+    background-size: 44%
+    position: relative
+    padding-left: 80px
+    &__text-block
+        width: 45%
+        margin-right: 80px
+    &__image-block
+        width: 45%
+        svg
+            position: absolute
+            top: 33px
+    h1
+        font-size: 56px
+        margin: 110px 0px 20px 0px
+    h2
+        font-size: 18px
+        margin-bottom: 60px
+    a
+        border-radius: 50px
+        border: 3px solid #04A2A2
+        background-color: #04A2A2
+        color: white
+        padding: 17px 50px
+        font-size: 16px
+        &:hover
+            background-color: transparent
+            color: $base_black_color
+            transition: 0.1s
+            cursor: pointer
+.sidebar
+    width: 25%
+    padding-right: 30px
+    margin-top: 50px
+
+.article-review
+    background: #F5F5F5
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+    border-radius: 10px
+    padding: 30px
+    h3
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+        text-transform: uppercase
+        color: #444444
+        border-bottom: 1px solid #D9D9D9
+        padding-bottom: 15px
+    h5
+        font-weight: 900
+        font-size: 16px
+        line-height: 140%
+        color: #0070AF
+        margin-bottom: 10px
+    p
+        font-style: italic
+        font-weight: 300
+        font-size: 16px
+        margin-bottom: 5px
+        color: #999999
+    p:last-child
+        margin-bottom: 0px
+    span:last-child
+        margin-bottom: 0
+    span
+        border-top: 1px solid #D9D9D9
+        display: block
+        font-weight: 400
+        font-size: 16px
+        line-height: 140%
+        color: #999999
+        padding-top: 30px
+        margin-bottom: 10px
+    img
+        width: 100px
+        height: 100px
+        border-radius: 50%
+    .row
+        padding: 30px 0
+    .article-review__photo
+        padding: 0px 10px
+    .article-review__text
+        padding: 0px 10px
+
+.col50
+    width: 50%
+    padding: 0px 15px
+
+.navigation
+    margin: 60px 0px
+    ul
+        position: relative
+        li
+            cursor: pointer
+            overflow: hidden
+            text-overflow: ellipsis
+            padding-left: 30px
+
+            white-space: nowrap
+            position: relative
+            &::before
+                background: #e8e9ef
+                content: ""
+                display: inline-block
+                height: 100%
+                left: 0
+                position: absolute
+                border-radius: 3px
+                width: 5px
+                transition: .3s
+
+            &:not(:last-child)
+                margin-bottom: 20px
+            &:hover
+                &::before
+                    background: rgb(0, 112, 175)
+
+        &:before
+            background: #e8e9ef
+            border-radius: 0 3px 3px 0
+            content: ""
+            display: inline-block
+            height: 100%
+            left: 0
+            position: absolute
+            width: 5px
+
+    h3
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+        text-transform: uppercase
+        color: #444444
+        padding-bottom: 15px
+
+    a
+        color: #444444
+    a:hover
+        color: #147BB5
+
+.stocks
+    max-width: 80%
+    h3
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+        text-transform: uppercase
+        color: #444444
+        padding-bottom: 15px
+
+    & .item
+        padding: 0px
+        border-radius: 15px
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 5%)
+        border: 1px solid #e8e8e8
+        background: #F5F5F5
+        margin-bottom: 0px
+        height: 100%
+        transition: all .3s ease-out
+
+    & a
+        outline: none
+        color: #147BB5
+
+    & .item a
+        text-decoration: none
+        color: inherit
+        display: block
+        height: 100%
+        position: relative
+
+    & .item .img
+        width: 100%
+
+    & .item .img img
+        width: 100%
+        border-radius: 15px 15px 0px 0px
+
+    & .item .date
+        margin: 15px 15px
+        color: #909090
+        font-size: 12px
+
+    & .item .h2
+        font-size: 18px
+        font-weight: 400
+        margin: 15px 15px 15px 15px
+        color: #0070AF
+
+    & .item .text
+        font-size: 12px
+        margin: 0 15px 0px 15px
+        color: #444444
+        align-items: flex-end
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: 15px
+.content
+    width: 50%
+    padding: 0px 30px
+    margin-top: 25px
+.favors_list
+    &__name
+        width: 65%
+    &__price
+        width: 12%
+        font-weight: 600
+
+    &__order
+        width: 23%
+        text-align: right
+        a
+            font-size: 15px
+            color: $btn_green_color
+            border: 2px solid $btn_green_color
+            background-color: transparent
+            padding: 10px 22px
+            border-radius: 20px
+            font-weight: 500
+            &:hover
+                color: white
+                background-color: $btn_green_color
+
+            img
+                display: none
+    li
+        list-style-type: none
+        padding: 24px
+        border-radius: 10px
+        font-size: 17px
+        line-height: 19.92px
+        margin-top: 20px
+        background-color: $base_blue_color
+        &:last-child
+            background-color: $base_yellow_color
+            .favors_list__name
+                width: 50%
+                margin: -13px 0px
+            .favors_list__order
+                width: 50%
+                a
+                    background-color: $btn_green_color
+                    color: white
+                a:hover
+                    color: $btn_green_color
+                    background-color: transparent
+            img
+                height: 42px
+
+.call-to-action-stock-for-first-buy
+    margin-top: 50px
+    height: 230px
+    background-image: url(../img/call-to-action-stock-for-first-buy.png)
+    background-position-y: 500px
+    border-radius: 10px
+    color: white
+    overflow: hidden
+    .gradient
+        background: radial-gradient(ellipse farthest-side at 194px 113px, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0))
+        width: 100%
+        height: 100%
+        padding-left: 40px
+        padding-top: 20px
+    h3
+        font-weight: 500
+        font-size: 30px
+        color: white
+        margin-bottom: 10px
+    h5
+        color: white
+        font-weight: 400
+        font-size: 17px
+        margin-bottom: 40px
+    a
+        text-decoration: none
+        font-weight: 500
+        font-size: 16px
+        background-color: #04A2A2
+        border: 4px solid #04A2A2
+        color: white
+        padding: 15px 40px
+        border-radius: 50px
+    a:hover
+        background-color: transparent
+
+    img
+        display: grid
+        position: relative
+        top: -125px
+        right: -515px
+    &__prices
+        position: relative
+        top: -201px
+        right: -280px
+        line-height: 24px
+        color: white
+        font-weight: 500
+        font-size: 30px
+        text-align: center
+        s
+            color: white
+            font-size: 16px
+.ul-with-blue-circles
+    padding-top: 15px
+
+    & li
+        list-style-image: url(../img/circle.svg)
+        list-style-position: inside
+        font-size: 17px
+        line-height: 35px
+
+.call-to-action-get-consult
+    margin-top: 50px
+
+    height: 320px
+    background-image: url(../img/call-to-action-stock-for-first-buy.png)
+    border-radius: 10px
+    color: white
+    overflow: hidden
+    b
+        color: white
+    .gradient
+        background: radial-gradient(ellipse farthest-side at 194px 153px, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0))
+        width: 100%
+        height: 100%
+        padding-left: 40px
+        padding-top: 20px
+    h3
+        font-weight: 500
+        font-size: 30px
+        color: white
+        margin-bottom: 10px
+    h5
+        color: white
+        font-weight: 400
+        font-size: 17px
+        line-height: 150%
+        margin-bottom: 40px
+    h5:last-child
+        margin-top: 30px
+    input
+        padding: 17px 40px
+        border-radius: 50px
+        max-width: 234px
+        margin-right: 15px
+    a
+        text-decoration: none
+        font-weight: 500
+        font-size: 16px
+        background-color: #04A2A2
+        border: 4px solid #04A2A2
+        color: white
+        padding: 15px 40px
+        border-radius: 50px
+    a:hover
+        background-color: transparent
+
+.prev,
+.next
+    position: absolute
+    top: 30%
+    height: 50px
+    width: 50px
+    z-index: 1
+    cursor: pointer
+
+.prev
+    left: -80px
+
+.next
+    right: -80px
+
+.diagnostic-slider
+    margin-top: 25px
+    &__element
+        font-size: 17px
+        padding: 8px
+        font-weight: 500
+        a
+            font-weight: 400
+            line-height: 40px
+            text-decoration: underline
+    &__image
+        width: 100%
+        border-radius: 20px
+        height: 200px
+        object-fit: cover
+        margin-bottom: 15px
+
+.equipment
+    &__element
+        background-color: $base_grey_color
+        border-radius: 10px
+        margin-top: 25px
+        font-weight: 600
+        font-size: 17px
+        img
+            width: 280px
+            height: 300px
+            border-radius: 10px 0px 0px 10px
+        ul
+            margin-top: 15px
+            font-weight: 400
+            font-size: 15px
+            list-style-position: inside
+        li
+            padding-bottom: 7px
+    &__text
+        padding: 28px
+.img-block
+    width: 100%
+    margin-top: 25px
+    border-radius: 10px
+
+.call-to-action-order-now
+    margin-top: 50px
+    height: 230px
+    background-image: url(../img/call-to-action-order-now.png)
+    background-position-y: 500px
+    border-radius: 10px
+    color: white
+    overflow: hidden
+    text-align: center
+
+    .gradient
+        background: radial-gradient(ellipse farthest-side at 340px 110px, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0))
+        width: 100%
+        height: 100%
+        padding-top: 20px
+    h3
+        font-weight: 500
+        font-size: 30px
+        color: white
+        margin-bottom: 10px
+    h5
+        color: white
+        font-weight: 400
+        font-size: 17px
+        margin-bottom: 40px
+    a
+        text-decoration: none
+        font-weight: 500
+        font-size: 16px
+        background-color: #04A2A2
+        border: 4px solid #04A2A2
+        color: white
+        padding: 15px 40px
+        border-radius: 50px
+    a:hover
+        background-color: transparent
+
+    img
+        display: grid
+        position: relative
+        top: -125px
+        right: -515px
+    &__prices
+        position: relative
+        top: -201px
+        right: -280px
+        line-height: 24px
+        color: white
+        font-weight: 500
+        font-size: 30px
+        text-align: center
+        s
+            color: white
+            font-size: 16px
+
+.doctors-slider__element_wrapper
+    padding: 10px
+
+.doctors-slider__element
+    text-align: center
+    color: #9A9A9A
+    font-size: 14px
+    border: 1px solid #D9D9D9
+    border-radius: 10px
+
+    & img
+        width: 100%
+        border-radius: 10px 10px 0px 0px
+
+    & div
+        margin-top: 10px
+
+    & .doctor_exp
+        color: #444444
+        background-color: #F5F5F5
+        padding: 8px
+        margin: 0px 45px
+        margin-top: 10px
+        border-radius: 6px
+
+    & .doctor_bill:hover
+        background-color: transparent
+        color: black
+
+    & div:last-child
+        margin: 30px 0px
+
+    & a
+        font-size: 16px
+        padding-top: 20px
+        font-weight: 500
+        text-decoration: none
+        color: #147BB5
+    & .doctor_bill
+        background-color: #04A2A2
+        border: 2px solid #04A2A2
+        color: white
+        padding: 10px 20px
+        font-size: 14px
+        font-weight: 400
+        border-radius: 50px
+.background_green
+    background-color: $base_green_color
+.background_blue
+    background-color: $base_blue_color
+
+.whywe-element
+    display: flex
+    height: 280px
+    &__img-block
+        width: 35%
+        padding: 20px 20px 0px 0px
+        img
+            width: 230px
+            height: 230px
+            border-radius: 10px
+            &:last-child
+                position: relative
+                top: -257px
+                left: -17px
+    &__img-block_r
+        padding: 20px 20px 0px 35px
+
+    &__text-block
+        padding: 35px
+        border-radius: 10px
+        height: 250px
+        font-weight: 600
+        font-size: 18px
+        line-height: 150%
+        ul
+            list-style-position: inside
+            margin-top: 15px
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            li
+                padding-bottom: 7px
+
+.feedback
+    &__stars
+        width: 50%
+        padding-right: 18px
+        &_text
+            font-weight: 600
+            font-size: 60px
+        img
+            width: 34px
+            height: 34px
+        &_sub-text
+            font-size: 16px
+            line-height: 22px
+        a
+            text-decoration: none
+            font-weight: 500
+            font-size: 16px
+            background-color: #04A2A2
+            border: 4px solid #04A2A2
+            color: white
+            padding: 15px 60px
+            border-radius: 50px
+            line-height: 100px
+        a:hover
+            background-color: transparent
+            color: black
+
+    &__lines
+        width: 50%
+        padding-left: 18px
+        font-size: 17px
+        line-height: 40px
+        padding-top: 80px
+        img
+            width: 100%
+
+.feedback-slider
+    margin-top: 50px
+    .prev, .next
+        top: 40%
+
+    &__element
+        background: $base_grey_color
+        padding: 60px 40px
+        border-radius: 10px
+        &_name
+            font-weight: 600
+            font-size: 18px
+        &_date
+            padding-top: 5px
+            font-weight: 400
+            font-size: 15px
+            color: #9A9A9A
+            img
+                display: inline-block
+                width: 18px
+                position: relative
+                top: 1px
+        &_feedback
+            padding-top: 20px
+            font-size: 18px
+            line-height: 27px
+.may-be-interesting
+    padding-bottom: 50px
+
+    h3
+        padding-bottom: 20px
+    a
+        padding: 20px 30px
+        color: black
+        border: 2px solid #D9D9D9
+        border-radius: 50px
+    a:hover
+        color: #147BB5
+        border: 2px solid #147BB5
+
+.licence-slider
+    padding-top: 50px
+    .prev, .next
+        top: 50%
+
+    &_img
+        width: 95%
+        border: 2px solid #D9D9D9
+        border-radius: 10px
+
+.call-to-action-order-now-large
+    border-radius: 20px
+    background: linear-gradient(99.52deg, rgba(0, 112, 175, 0.8) 16.73%, #0070AF 69.56%)
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+    position: relative
+    padding: 60px
+    h1, h2, b
+        color: white
