@@ -9,9 +9,14 @@ $('.diagnostic-slider').slick({
     prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
     nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
     responsive: [{
-        breakpoint: 900,
+        breakpoint: 1200,
         settings: {
             arrows: false,
+        }
+    },
+    {
+        breakpoint: 900,
+        settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
         }
@@ -19,7 +24,6 @@ $('.diagnostic-slider').slick({
     {
         breakpoint: 500,
         settings: {
-            arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
         }
@@ -36,7 +40,23 @@ $('.doctors-slider').slick({
     prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
     nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
     responsive: [{
+        breakpoint: 1200,
+        settings: {
+            arrows: false,
+            slidesToShow: 3,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
         breakpoint: 900,
+        settings: {
+            arrows: false,
+            slidesToShow: 2,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 650,
         settings: {
             arrows: false,
             slidesToShow: 1,
@@ -55,14 +75,14 @@ $('.feedback-slider').slick({
     prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
     nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
     responsive: [{
-        breakpoint: 900,
+        breakpoint: 1200,
         settings: {
             arrows: false,
         }
     }]
 });
 
-$('.tech_slider').slick({
+$('.equipment-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
