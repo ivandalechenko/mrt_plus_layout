@@ -1012,30 +1012,104 @@ body {
   display: flex;
   height: 280px;
 }
+@media (max-width: 800px) {
+  .whywe-element {
+    display: block;
+    height: 200px;
+    margin-bottom: 210px;
+  }
+}
 .whywe-element__img-block {
   width: 35%;
-  padding: 20px 20px 0px 0px;
+  padding: 20px 20px 0px 20px;
+}
+@media (max-width: 800px) {
+  .whywe-element__img-block {
+    height: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .whywe-element__img-block {
+    height: 130px;
+  }
+}
+@media (max-width: 390px) {
+  .whywe-element__img-block {
+    height: 130px;
+  }
 }
 .whywe-element__img-block img {
   width: 230px;
-  height: 230px;
   border-radius: 10px;
 }
-.whywe-element__img-block img:last-child {
-  position: relative;
-  top: -257px;
-  left: -17px;
+@media (max-width: 550px) {
+  .whywe-element__img-block img {
+    width: 150px;
+  }
 }
-.whywe-element__img-block_r {
-  padding: 20px 20px 0px 35px;
+@media (max-width: 390px) {
+  .whywe-element__img-block img {
+    width: 115px;
+  }
+}
+.whywe-element__img-block_r_phone {
+  display: none;
+}
+@media (max-width: 800px) {
+  .whywe-element__img-block_r_phone {
+    display: block;
+    position: relative;
+    left: 56%;
+  }
+  .whywe-element__img-block_r_pc {
+    display: none;
+  }
 }
 .whywe-element__text-block {
   padding: 35px;
   border-radius: 10px;
   height: 250px;
+  padding-top: 70px;
+}
+@media (max-width: 800px) {
+  .whywe-element__text-block {
+    height: auto;
+  }
+}
+@media (max-width: 390px) {
+  .whywe-element__text-block {
+    padding: 15px;
+    padding-top: 70px;
+  }
+}
+.whywe-element__text-block h5 {
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
+}
+@media (max-width: 800px) {
+  .whywe-element__text-block h5 {
+    position: relative;
+    top: -160px;
+    right: -227px;
+    width: 60%;
+    height: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .whywe-element__text-block h5 {
+    right: -150px;
+  }
+}
+@media (max-width: 390px) {
+  .whywe-element__text-block h5 {
+    right: -130px;
+  }
+}
+@media (max-width: 800px) {
+  .whywe-element__text-block_r h5 {
+    right: 0px;
+  }
 }
 .whywe-element__text-block ul {
   list-style-position: inside;
@@ -1044,21 +1118,47 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
+@media (max-width: 800px) {
+  .whywe-element__text-block ul {
+    margin-top: -15px;
+  }
+}
 .whywe-element__text-block ul li {
   padding-bottom: 7px;
 }
 
+@media (max-width: 700px) {
+  .feedback .row {
+    display: block;
+  }
+}
 .feedback__stars {
   width: 50%;
-  padding-right: 18px;
+}
+@media (max-width: 700px) {
+  .feedback__stars {
+    width: 100%;
+    padding-right: 18px;
+  }
 }
 .feedback__stars_text {
   font-weight: 600;
   font-size: 60px;
 }
+@media (max-width: 700px) {
+  .feedback__stars_text {
+    font-size: 40px;
+  }
+}
 .feedback__stars img {
   width: 34px;
   height: 34px;
+}
+@media (max-width: 800px) {
+  .feedback__stars img {
+    width: 25px;
+    height: 25px;
+  }
 }
 .feedback__stars_sub-text {
   font-size: 16px;
@@ -1085,6 +1185,12 @@ body {
   font-size: 17px;
   line-height: 40px;
   padding-top: 80px;
+}
+@media (max-width: 700px) {
+  .feedback__lines {
+    width: 100%;
+    padding: 0;
+  }
 }
 .feedback__lines img {
   width: 100%;
@@ -1135,6 +1241,11 @@ body {
   border: 2px solid #D9D9D9;
   border-radius: 50px;
 }
+@media (max-width: 500px) {
+  .may-be-interesting a {
+    display: block;
+  }
+}
 .may-be-interesting a:hover {
   color: #147BB5;
   border: 2px solid #147BB5;
@@ -1160,8 +1271,18 @@ body {
   position: relative;
   padding: 60px;
 }
+@media (max-width: 1000px) {
+  .call-to-action-order-now-large {
+    padding: 40px;
+  }
+}
 .call-to-action-order-now-large_text {
   width: 55%;
+}
+@media (max-width: 1000px) {
+  .call-to-action-order-now-large_text {
+    width: 100%;
+  }
 }
 .call-to-action-order-now-large b {
   color: white;
@@ -1190,6 +1311,17 @@ body {
   font-weight: 500;
   text-decoration: none;
   transition: 0.3s;
+}
+.call-to-action-order-now-large a:last-child {
+  display: none;
+}
+@media (max-width: 500px) {
+  .call-to-action-order-now-large a {
+    display: none;
+  }
+  .call-to-action-order-now-large a:last-child {
+    display: inline;
+  }
 }
 .call-to-action-order-now-large a:hover {
   background-color: transparent;

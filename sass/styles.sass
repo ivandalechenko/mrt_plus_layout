@@ -765,45 +765,98 @@ body
 .whywe-element
     display: flex
     height: 280px
+    @media (max-width:800px)
+        display: block
+        height: 200px
+        margin-bottom: 210px
     &__img-block
         width: 35%
-        padding: 20px 20px 0px 0px
+        padding: 20px 20px 0px 20px
+        @media (max-width:800px)
+            height: 200px
+        @media (max-width:550px)
+            height: 130px
+        @media (max-width:390px)
+            height: 130px
         img
             width: 230px
-            height: 230px
             border-radius: 10px
-            &:last-child
+            @media (max-width:550px)
+                width: 150px
+            @media (max-width:390px)
+                width: 115px
+        &_r_phone
+            display: none
+        @media (max-width:800px)
+            &_r_phone
+                display: block
                 position: relative
-                top: -257px
-                left: -17px
-    &__img-block_r
-        padding: 20px 20px 0px 35px
+                left: 56%
+            &_r_pc
+                display: none
 
     &__text-block
         padding: 35px
         border-radius: 10px
         height: 250px
-        font-weight: 600
-        font-size: 18px
-        line-height: 150%
+        padding-top: 70px
+        @media (max-width:800px)
+            height: auto
+        @media (max-width:390px)
+            padding: 15px
+            padding-top: 70px
+
+        h5
+            font-weight: 600
+            font-size: 18px
+            line-height: 150%
+            @media (max-width:800px)
+                position: relative
+                top: -160px
+                right: -227px
+                width: 60%
+                height: 20px
+            @media (max-width:550px)
+                right: -150px
+            @media (max-width:390px)
+                right: -130px
+        &_r
+            @media (max-width:800px)
+                h5
+                    right: 0px
         ul
             list-style-position: inside
             margin-top: 15px
             font-weight: 400
             font-size: 16px
             line-height: 19px
+            @media (max-width:800px)
+                margin-top: -15px
             li
                 padding-bottom: 7px
 .feedback
+    @media (max-width:700px)
+        .row
+            display: block
     &__stars
         width: 50%
-        padding-right: 18px
+        @media (max-width:700px)
+            width: 100%
+
+            padding-right: 18px
         &_text
             font-weight: 600
             font-size: 60px
+            @media (max-width:700px)
+                font-size: 40px
+
         img
             width: 34px
             height: 34px
+            @media (max-width:800px)
+                width: 25px
+                height: 25px
+
         &_sub-text
             font-size: 16px
             line-height: 22px
@@ -827,6 +880,9 @@ body
         font-size: 17px
         line-height: 40px
         padding-top: 80px
+        @media (max-width:700px)
+            width: 100%
+            padding: 0
         img
             width: 100%
 .feedback-slider
@@ -861,10 +917,13 @@ body
     h3
         padding-bottom: 20px
     a
+
         padding: 20px 30px
         color: black
         border: 2px solid #D9D9D9
         border-radius: 50px
+        @media (max-width: 500px)
+            display: block
     a:hover
         color: #147BB5
         border: 2px solid #147BB5
@@ -884,8 +943,14 @@ body
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
     position: relative
     padding: 60px
+    @media (max-width: 1000px)
+        padding: 40px
+
     &_text
         width: 55%
+        @media (max-width: 1000px)
+            width: 100%
+
     b
         color: white
     h3
@@ -912,6 +977,13 @@ body
         font-weight: 500
         text-decoration: none
         transition: .3s
+    a:last-child
+        display: none
+    @media (max-width: 500px)
+        a
+            display: none
+        a:last-child
+            display: inline
 
     a:hover
         background-color: transparent
