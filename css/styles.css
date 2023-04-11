@@ -3,12 +3,12 @@
   width: 1620px;
   margin: 0 auto;
 }
-@media (max-width: 1630px) {
+@media (max-width: 1640px) {
   .container {
     width: 1200px;
   }
 }
-@media (max-width: 1210px) {
+@media (max-width: 1220px) {
   .container {
     width: 100%;
     padding: 15px;
@@ -31,7 +31,7 @@ h3 {
   }
 }
 
-h4 {
+blockquote, h4 {
   margin-top: 25px;
   font-weight: 500;
   font-size: 20px;
@@ -40,12 +40,12 @@ h4 {
   border-left: 4px solid #147BB5;
 }
 @media (max-width: 1210px) {
-  h4 {
+  blockquote, h4 {
     font-size: 18px;
   }
 }
 
-p {
+.text-block p {
   margin-top: 25px;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +53,7 @@ p {
   line-height: 150%;
 }
 @media (max-width: 1210px) {
-  p {
+  .text-block p {
     font-size: 16px;
   }
 }
@@ -155,7 +155,7 @@ body {
     display: none;
   }
 }
-.first-banner__image-block svg {
+.first-banner__image-block img {
   position: absolute;
   top: 33px;
 }
@@ -219,7 +219,7 @@ body {
 }
 @media (max-width: 1630px) {
   .sidebar {
-    width: 35%;
+    width: 33%;
   }
 }
 @media (max-width: 1210px) {
@@ -373,6 +373,7 @@ body {
 .stocks a {
   outline: none;
   color: #147BB5;
+  text-decoration: underline;
 }
 .stocks .item a {
   text-decoration: none;
@@ -416,7 +417,7 @@ body {
 }
 @media (max-width: 1630px) {
   .content {
-    width: 65%;
+    width: 67%;
   }
 }
 @media (max-width: 1210px) {
@@ -709,9 +710,9 @@ body {
   margin-top: 30px;
 }
 .call-to-action-get-consult input {
-  padding: 17px 40px;
+  padding: 12.5px 30px;
   border-radius: 50px;
-  max-width: 234px;
+  max-width: 224px;
   margin-right: 15px;
 }
 .call-to-action-get-consult a {
@@ -721,7 +722,7 @@ body {
   background-color: #04A2A2;
   border: 4px solid #04A2A2;
   color: white;
-  padding: 15px 40px;
+  padding: 9.5px 35px;
   border-radius: 50px;
 }
 .call-to-action-get-consult a:hover {
@@ -754,14 +755,14 @@ body {
 }
 .call-to-action-dont-late h3 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 26px;
   color: white;
   margin-bottom: 10px;
 }
 .call-to-action-dont-late h5 {
   color: white;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 150%;
   margin-bottom: 40px;
 }
@@ -772,7 +773,7 @@ body {
   background-color: #04A2A2;
   border: 4px solid #04A2A2;
   color: white;
-  padding: 15px 40px;
+  padding: 9.5px 27.3px;
   border-radius: 50px;
 }
 
@@ -923,7 +924,7 @@ body {
   background-color: #04A2A2;
   border: 4px solid #04A2A2;
   color: white;
-  padding: 15px 40px;
+  padding: 10px 28px;
   border-radius: 50px;
 }
 .call-to-action-order-now a:hover {
@@ -1019,6 +1020,16 @@ body {
     margin-bottom: 210px;
   }
 }
+@media (max-width: 800px) {
+  .whywe-element {
+    height: 170px;
+  }
+}
+@media (max-width: 390px) {
+  .whywe-element {
+    height: 150px;
+  }
+}
 .whywe-element__img-block {
   width: 35%;
   padding: 20px 20px 0px 20px;
@@ -1041,6 +1052,13 @@ body {
 .whywe-element__img-block img {
   width: 230px;
   border-radius: 10px;
+  position: relative;
+  top: -20px;
+}
+@media (max-width: 800px) {
+  .whywe-element__img-block img {
+    width: 210px;
+  }
 }
 @media (max-width: 550px) {
   .whywe-element__img-block img {
@@ -1050,6 +1068,7 @@ body {
 @media (max-width: 390px) {
   .whywe-element__img-block img {
     width: 115px;
+    top: 0px;
   }
 }
 .whywe-element__img-block_r_phone {
@@ -1059,17 +1078,26 @@ body {
   .whywe-element__img-block_r_phone {
     display: block;
     position: relative;
-    left: 56%;
+    left: 65%;
   }
   .whywe-element__img-block_r_pc {
     display: none;
+  }
+}
+@media (max-width: 750px) {
+  .whywe-element__img-block_r_phone {
+    left: 60%;
+  }
+}
+@media (max-width: 650px) {
+  .whywe-element__img-block_r_phone {
+    left: 55%;
   }
 }
 .whywe-element__text-block {
   padding: 35px;
   border-radius: 10px;
   height: 250px;
-  padding-top: 70px;
 }
 @media (max-width: 800px) {
   .whywe-element__text-block {
@@ -1079,7 +1107,7 @@ body {
 @media (max-width: 390px) {
   .whywe-element__text-block {
     padding: 15px;
-    padding-top: 70px;
+    padding-top: 20px;
   }
 }
 .whywe-element__text-block h5 {
@@ -1098,11 +1126,13 @@ body {
 }
 @media (max-width: 550px) {
   .whywe-element__text-block h5 {
+    top: -136px;
     right: -150px;
   }
 }
 @media (max-width: 390px) {
   .whywe-element__text-block h5 {
+    top: -110px;
     right: -130px;
   }
 }
@@ -1171,7 +1201,7 @@ body {
   background-color: #04A2A2;
   border: 4px solid #04A2A2;
   color: white;
-  padding: 15px 60px;
+  padding: 8.5px 68.3px;
   border-radius: 50px;
   line-height: 100px;
 }
@@ -1236,15 +1266,12 @@ body {
   padding-bottom: 20px;
 }
 .may-be-interesting a {
-  padding: 20px 30px;
+  white-space: nowrap;
+  padding: 8px 24.2px;
   color: black;
   border: 2px solid #D9D9D9;
   border-radius: 50px;
-}
-@media (max-width: 500px) {
-  .may-be-interesting a {
-    display: block;
-  }
+  line-height: 60px;
 }
 .may-be-interesting a:hover {
   color: #147BB5;
@@ -1273,7 +1300,9 @@ body {
 }
 @media (max-width: 1000px) {
   .call-to-action-order-now-large {
-    padding: 40px;
+    padding: 10px 30px 40px 30px;
+    margin-right: -15px;
+    margin-left: -15px;
   }
 }
 .call-to-action-order-now-large_text {
@@ -1294,13 +1323,23 @@ body {
   color: #ffffff;
   margin-bottom: 30px;
 }
+@media (max-width: 800px) {
+  .call-to-action-order-now-large h3 {
+    font-size: 28px;
+  }
+}
 .call-to-action-order-now-large p {
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 30px;
   color: #ffffff;
 }
-.call-to-action-order-now-large a {
+@media (max-width: 800px) {
+  .call-to-action-order-now-large p {
+    font-size: 18px;
+  }
+}
+.call-to-action-order-now-large button {
   background-color: #ffffff;
   border-radius: 40px;
   font-size: 18px;
@@ -1308,7 +1347,7 @@ body {
   padding: 8px 20px;
   color: #338cbf;
   border: 1px solid #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
 }

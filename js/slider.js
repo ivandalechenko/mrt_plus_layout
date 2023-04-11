@@ -19,6 +19,7 @@ $('.diagnostic-slider').slick({
         settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            arrows: false,
         }
     },
     {
@@ -26,6 +27,7 @@ $('.diagnostic-slider').slick({
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            arrows: false,
         }
     }]
 });
@@ -94,12 +96,11 @@ $('.equipment-slider').slick({
 $('.licence-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
+    dots: true,
     focusOnSelect: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
-    nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
     responsive: [{
         breakpoint: 900,
         settings: {
