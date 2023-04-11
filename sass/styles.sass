@@ -34,15 +34,6 @@ blockquote, h4
     border-left: 4px solid #147BB5
     @media (max-width: 1210px)
         font-size: 18px
-.text-block
-    p
-        margin-top: 25px
-        font-style: normal
-        font-weight: 400
-        font-size: 17px
-        line-height: 150%
-        @media (max-width: 1210px)
-            font-size: 16px
 img
     object-fit: cover
 .mt50
@@ -92,6 +83,7 @@ body
         background-color: white
     @media (max-width: 600px)
         padding: 20px
+        height: auto
     &__text-block
         width: 45%
         margin-right: 80px
@@ -115,7 +107,16 @@ body
             font-size: 24px
         @media (max-width: 600px)
             margin: 20px 0px 20px 0px
-
+    &__text-block_mrt
+        h1
+            font-size: 56px
+            margin: 70px 0px 20px 0px
+            @media (max-width: 1630px)
+                margin: 25px 0px 20px 0px
+            @media (max-width: 1210px)
+                font-size: 24px
+            @media (max-width: 600px)
+                margin: 20px 0px 20px 0px
     h2
         font-size: 18px
         margin-bottom: 60px
@@ -163,6 +164,7 @@ body
         color: #444444
         border-bottom: 1px solid #D9D9D9
         padding-bottom: 15px
+        margin-top: 0px
     h5
         font-weight: 900
         font-size: 16px
@@ -321,6 +323,14 @@ body
         width: 100%
     @media (max-width: 600px)
         padding: 0px
+    p
+        margin-top: 25px
+        font-style: normal
+        font-weight: 400
+        font-size: 17px
+        line-height: 150%
+        @media (max-width: 1210px)
+            font-size: 16px
 .favors_list
     &__name
         width: 65%
@@ -684,18 +694,25 @@ body
         background: radial-gradient(ellipse farthest-side at 340px 110px, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0))
         width: 100%
         height: 100%
-        padding-top: 20px
-        padding-bottom: 60px
+        padding: 20px 20px 60px 20px
+        @media (max-width: 700px)
+            background: radial-gradient(ellipse farthest-side at 225px 110px, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0))
     h3
         font-weight: 500
         font-size: 30px
         color: white
         margin-bottom: 10px
+        @media (max-width: 700px)
+            font-size: 26px
+
     h5
         color: white
         font-weight: 400
         font-size: 17px
         margin-bottom: 40px
+        @media (max-width: 700px)
+            font-size: 16px
+
     a
         text-decoration: none
         font-weight: 500
@@ -783,8 +800,12 @@ body
         margin-bottom: 210px
     @media (max-width:800px)
         height: 170px
+    @media (max-width:550px)
+        height: 120px
+    @media (max-width:450px)
+        height: 140px
     @media (max-width:390px)
-        height: 150px
+        height: 130px
 
     &__img-block
         width: 35%
@@ -949,11 +970,14 @@ body
         color: black
         border: 2px solid #D9D9D9
         border-radius: 50px
-        line-height: 60px
         margin-right: 15px
+        margin-top: 15px
     a:hover
         color: #147BB5
         border: 2px solid #147BB5
+    &_a_wrapper
+        display: flex
+        flex-wrap: wrap
 .licence-slider
     padding-top: 50px
     .prev, .next
