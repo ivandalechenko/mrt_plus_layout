@@ -19,21 +19,41 @@ $base_grey_color: #F5F5F5
 h1, h2, h3, h4
     font-style: normal
     font-weight: 400
-h3
-    font-weight: 400
-    font-size: 34px
-    margin-top: 25px
-    @media (max-width: 1210px)
-        font-size: 24px
-blockquote
-    margin-top: 25px
-    font-weight: 500
-    font-size: 20px
-    line-height: 150%
-    padding-left: 20px
-    border-left: 4px solid #147BB5
-    @media (max-width: 1210px)
-        font-size: 18px
+
+.text-block
+    h3
+        font-weight: 400
+        font-size: 34px
+        margin-top: 25px
+        @media (max-width: 1210px)
+            font-size: 24px
+
+    blockquote
+        margin-top: 25px
+        font-weight: 500
+        font-size: 20px
+        line-height: 150%
+        padding-left: 20px
+        border-left: 4px solid #147BB5
+        @media (max-width: 1210px)
+            font-size: 18px
+
+    p
+        margin-top: 25px
+        font-style: normal
+        font-weight: 400
+        font-size: 17px
+        line-height: 150%
+        @media (max-width: 1210px)
+            font-size: 16px
+    .ul-with-blue-circles
+        padding-top: 15px
+        & li
+            list-style-image: url(../img/circle.svg)
+            list-style-position: inside
+            font-size: 17px
+            line-height: 35px
+
 img
     object-fit: cover
 .mt50
@@ -64,6 +84,8 @@ body
     padding-bottom: 200px
 .row
     display: flex
+    flex-wrap: wrap
+
 .first-banner
     border-radius: 20px
     height: 450px
@@ -84,6 +106,8 @@ body
     @media (max-width: 600px)
         padding: 20px
         height: auto
+    @media (max-width: 400px)
+        padding: 0px
     &__text-block
         width: 45%
         margin-right: 80px
@@ -130,8 +154,8 @@ body
         font-size: 16px
         padding: 15px 50px
         @media (max-width: 400px)
-            padding: 15px
-        @media (max-width: 330px)
+            padding: 15px 40px
+        @media (max-width: 340px)
             padding: 10px
         &:hover
             background-color: transparent
@@ -146,16 +170,23 @@ body
     @media (max-width: 1630px)
         width: 33%
     @media (max-width: 1210px)
-        display: none
+        width: 100%
+        padding-right: 0px
 .sidebar
     position: sticky
     top: 20px
+    @media (max-width: 1210px)
+        position: relative
+        top: 0px
 
 .article-review
     background: #F5F5F5
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
     border-radius: 10px
     padding: 30px
+    @media (max-width: 400px)
+
+        padding: 14px
     h3
         font-weight: 400
         font-size: 24px
@@ -196,15 +227,27 @@ body
         border-radius: 50%
     .row
         padding: 30px 0
+
     .article-review__photo
         padding: 0px 10px
+        width: 40%
+        max-width: 150px
+        @media (max-width: 400px)
+            padding: 0px
+
     .article-review__text
         padding: 0px 10px
+        width: 60%
+        @media (max-width: 400px)
+            padding: 0px
+
 .col50
     width: 50%
     padding: 0px 15px
 .navigation
     margin: 60px 0px
+    @media (max-width: 1210px)
+        display: none
     ul
         position: relative
         li
@@ -256,6 +299,8 @@ body
         color: #147BB5
 .stocks
     max-width: 80%
+    @media (max-width: 1210px)
+        display: none
     h3
         font-weight: 400
         font-size: 24px
@@ -323,14 +368,6 @@ body
         width: 100%
     @media (max-width: 600px)
         padding: 0px
-    p
-        margin-top: 25px
-        font-style: normal
-        font-weight: 400
-        font-size: 17px
-        line-height: 150%
-        @media (max-width: 1210px)
-            font-size: 16px
 .favors_list
     &__name
         width: 65%
@@ -455,6 +492,7 @@ body
         @media (max-width:650px)
             padding-left: 20px
     h3
+        margin-top: 25px
         font-weight: 500
         font-size: 30px
         color: white
@@ -505,14 +543,6 @@ body
         s
             color: white
             font-size: 16px
-.ul-with-blue-circles
-    padding-top: 15px
-
-    & li
-        list-style-image: url(../img/circle.svg)
-        list-style-position: inside
-        font-size: 17px
-        line-height: 35px
 .call-to-action-get-consult
     margin-top: 50px
     max-width: 720px
@@ -582,6 +612,7 @@ body
         padding-top: 20px
         padding-bottom: 50px
     h3
+        margin-top: 25px
         font-weight: 500
         font-size: 26px
         color: white
@@ -608,9 +639,11 @@ body
     padding: 30px
     margin-top: 30px
     background-image: url(../img/usp_background_element.png)
-    background-position: 60px 10px
+    background-position: 40px
     background-repeat: no-repeat
-    background-size: 144%
+    background-size: 160%
+    @media (max-width: 1210px)
+        display: none
     h3
         font-size: 24px
         line-height: 150%
@@ -644,14 +677,14 @@ body
 .next
     position: absolute
     top: 30%
-    height: 50px
-    width: 50px
+    height: 40px
+    width: 40px
     z-index: 1
     cursor: pointer
 .prev
-    left: -80px
+    left: -49px
 .next
-    right: -80px
+    right: -49px
 .diagnostic-slider
     margin-top: 25px
     &__element
@@ -770,6 +803,7 @@ body
         @media (max-width: 700px)
             background: radial-gradient(ellipse farthest-side at 225px 110px, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0))
     h3
+        margin-top: 25px
         font-weight: 500
         font-size: 30px
         color: white
@@ -956,6 +990,8 @@ body
             li
                 padding-bottom: 7px
 .feedback
+
+    padding-top: 25px
     @media (max-width:700px)
         .row
             display: block
@@ -1000,7 +1036,6 @@ body
         padding-left: 18px
         font-size: 17px
         line-height: 40px
-        padding-top: 80px
         @media (max-width:700px)
             width: 100%
             padding: 0
@@ -1084,6 +1119,7 @@ body
         line-height: 110%
         color: #ffffff
         margin-bottom: 30px
+        margin-top: 15px
         @media (max-width: 800px)
             font-size: 28px
 
@@ -1101,7 +1137,7 @@ body
         text-align: center
         padding: 8px 20px
         color: #338cbf
-        border: 1px solid #ffffff
+        border: 2px solid #ffffff
         font-weight: 600
         text-decoration: none
         transition: .3s
@@ -1109,6 +1145,11 @@ body
             padding: 8px 40px
         @media (max-width: 350px)
             padding: 8px 20px
+    button:hover
+        transition: .3s
+        cursor: pointer
+        background-color: transparent
+        color: white
 
 .our-advantages
     display: flex
@@ -1134,6 +1175,7 @@ body
                 width: 80%
             &_img
                 width: 20%
+                margin: auto
 
         @media (max-width: 420px)
             padding: 20px
@@ -1146,6 +1188,9 @@ body
             height: 50px
             margin-bottom: 10px
 
+            @media (max-width: 800px)
+                margin: auto
+
 .call-to-action-night
     background: radial-gradient(89.2% 486.94% at 89.2% 81.62%, #2195D7 0%, #00669F 100%)
     padding: 40px 0px 30px 50px
@@ -1153,11 +1198,10 @@ body
     border-radius: 10px
     margin-top: 25px
     overflow: hidden
-    max-height: 370px
+    max-height: 320px
     @media (max-width: 830px)
         padding: 25px
-        max-height: auto
-
+        max-height: none
     img
         float: right
         position: relative
@@ -1167,6 +1211,8 @@ body
     h3
         color: white
         font-weight: 500
+        @media (max-width: 830px)
+            margin-top: 10px
     &_time
         color: white
         margin-top: 10px
@@ -1421,3 +1467,25 @@ body
     a:hover
         color: white
         background-color: transparent
+
+.other-research-slider
+    margin-top: 25px
+    &__element_wrapper
+        padding: 10px
+    &__element
+        border: 1px solid #D9D9D9
+        border-radius: 10px
+        padding: 20px 20px 34px 20px
+        p
+            margin-top: 0px
+            margin-bottom: 20px
+            font-size: 16px
+            min-height: 72px
+        a
+            font-size: 14px
+            padding: 14px 35px
+            text-decoration: none
+            color: white
+            background-color: #04A2A2
+            border: 2px solid #04A2A2
+            border-radius: 50px

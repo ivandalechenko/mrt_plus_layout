@@ -68,6 +68,43 @@ $('.doctors-slider').slick({
     }]
 });
 
+$('.other-research-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            arrows: false,
+            slidesToShow: 3,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 900,
+        settings: {
+            arrows: false,
+            slidesToShow: 2,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 650,
+        settings: {
+            arrows: false,
+            slidesToShow: 1,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }]
+});
+
+
 $('.feedback-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
