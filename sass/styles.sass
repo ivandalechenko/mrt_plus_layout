@@ -1240,3 +1240,109 @@ body
                 font-size: 17px
                 margin-top: 10px
                 line-height: 24px
+
+.how-it-work
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &_element
+        margin-top: 21px
+        width: 48.5%
+        background: #EFF5F8
+        border-radius: 10px
+        padding: 20px
+        display: flex
+        @media (max-width:500px)
+            width: 100%
+
+        &_large_text
+            width: 30%
+            &_time
+                text-align: center
+                &_num
+                    font-size: 60px
+                    color: #147BB5
+                    margin-bottom: -10px
+
+                &_text
+                    font-weight: 500
+                    font-size: 18px
+                    color: #147BB5
+
+        &_text
+            width: 70%
+            margin: auto 0
+            font-weight: 400
+            font-size: 17px
+            padding-left: 20px
+    &_element:last-child
+        width: 100%
+        display: block
+        .how-it-work_element_large_text
+            width: 100%
+            font-weight: 500
+            font-size: 20px
+            padding-bottom: 10px
+            color: #147BB5
+            padding-left: 20px
+
+        .how-it-work_element_text
+            width: 100%
+            font-size: 17px
+
+.mrt-gallery
+    @media (max-width: 1200px)
+        display: none
+.mrt-gallery-slider
+    margin-top: 25px
+    .prev,
+    .next
+        top: 45%
+    &_element
+        img
+            width: 100%
+
+.experts-opinion
+    background-color: #EFF5F8
+    padding: 46px
+    margin-top: 25px
+    border-radius: 10px
+    @media (max-width: 700px)
+        padding: 30px 20px
+    &_who
+        display: flex
+        flex-wrap: wrap
+
+        &_img
+            width: 20%
+            @media (max-width: 700px)
+                width: 30%
+            @media (max-width: 400px)
+                width: 100%
+                text-align: center
+
+            img
+                width: 92px
+                height: 92px
+                border-radius: 50px
+        &_text
+            width: 80%
+            margin: auto
+            @media (max-width: 700px)
+                width: 70%
+            @media (max-width: 400px)
+                width: 100%
+                text-align: center
+
+            &_name
+                font-weight: 500
+                font-size: 18px
+                padding-bottom: 6px
+            &_rank
+                font-weight: 400
+                font-size: 16px
+                color: #9A9A9A
+    &_text
+        p
+            font-size: 17px
+            line-height: 150%

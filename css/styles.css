@@ -1673,3 +1673,142 @@ body {
   margin-top: 10px;
   line-height: 24px;
 }
+
+.how-it-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.how-it-work_element {
+  margin-top: 21px;
+  width: 48.5%;
+  background: #EFF5F8;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .how-it-work_element {
+    width: 100%;
+  }
+}
+.how-it-work_element_large_text {
+  width: 30%;
+}
+.how-it-work_element_large_text_time {
+  text-align: center;
+}
+.how-it-work_element_large_text_time_num {
+  font-size: 60px;
+  color: #147BB5;
+  margin-bottom: -10px;
+}
+.how-it-work_element_large_text_time_text {
+  font-weight: 500;
+  font-size: 18px;
+  color: #147BB5;
+}
+.how-it-work_element_text {
+  width: 70%;
+  margin: auto 0;
+  font-weight: 400;
+  font-size: 17px;
+  padding-left: 20px;
+}
+.how-it-work_element:last-child {
+  width: 100%;
+  display: block;
+}
+.how-it-work_element:last-child .how-it-work_element_large_text {
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #147BB5;
+  padding-left: 20px;
+}
+.how-it-work_element:last-child .how-it-work_element_text {
+  width: 100%;
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+  .mrt-gallery {
+    display: none;
+  }
+}
+
+.mrt-gallery-slider {
+  margin-top: 25px;
+}
+.mrt-gallery-slider .prev,
+.mrt-gallery-slider .next {
+  top: 45%;
+}
+.mrt-gallery-slider_element img {
+  width: 100%;
+}
+
+.experts-opinion {
+  background-color: #EFF5F8;
+  padding: 46px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .experts-opinion {
+    padding: 30px 20px;
+  }
+}
+.experts-opinion_who {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experts-opinion_who_img {
+  width: 20%;
+}
+@media (max-width: 700px) {
+  .experts-opinion_who_img {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+  .experts-opinion_who_img {
+    width: 100%;
+    text-align: center;
+  }
+}
+.experts-opinion_who_img img {
+  width: 92px;
+  height: 92px;
+  border-radius: 50px;
+}
+.experts-opinion_who_text {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 700px) {
+  .experts-opinion_who_text {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .experts-opinion_who_text {
+    width: 100%;
+    text-align: center;
+  }
+}
+.experts-opinion_who_text_name {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 6px;
+}
+.experts-opinion_who_text_rank {
+  font-weight: 400;
+  font-size: 16px;
+  color: #9A9A9A;
+}
+.experts-opinion_text p {
+  font-size: 17px;
+  line-height: 150%;
+}

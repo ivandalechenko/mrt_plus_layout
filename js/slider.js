@@ -90,8 +90,19 @@ $('.equipment-slider').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
-
 });
+
+$('.mrt-gallery-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
+});
+
+
 
 $('.licence-slider').slick({
     slidesToShow: 3,
