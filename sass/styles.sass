@@ -601,6 +601,45 @@ body
         color: white
         padding: 9.5px 27.3px
         border-radius: 50px
+.call-to-action-sidebar
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+    background-color: #F5F5F5
+    border-radius: 10px
+    padding: 30px
+    margin-top: 30px
+    background-image: url(../img/usp_background_element.png)
+    background-position: 61px
+    background-repeat: no-repeat
+    background-size: 144%
+    h3
+        font-size: 24px
+        line-height: 150%
+        margin: 0px
+        margin-bottom: 20px
+    input
+        width: 100%
+        border: 1px solid #D7D7D7
+        border-radius: 50px
+        padding: 14px 20px
+        margin-top: 10px
+        font-size: 16px
+    button
+        display: block
+        width: 100%
+        padding: 14px 20px
+        margin-top: 20px
+        margin-bottom: 20px
+        font-size: 16px
+        background-color: #04A2A2
+        border: 2px solid #04A2A2
+        color: white
+        border-radius: 50px
+        transition: .3s
+    button:hover
+        transition: .3s
+        background-color: transparent
+        text-shadow: 0px 0px 10px black
+        cursor: pointer
 .prev,
 .next
     position: absolute
@@ -1037,3 +1076,85 @@ body
             padding: 8px 40px
         @media (max-width: 350px)
             padding: 8px 20px
+
+.our-advantages
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &_element
+        margin-top: 21px
+        width: 48.5%
+        height: 220px
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #EFF5F8 100%)
+        border-radius: 10px
+        padding: 40px
+        &_text
+            font-weight: 500
+            font-size: 18px
+            line-height: 140%
+            margin-top: 8px
+        @media (max-width: 800px)
+            width: 100%
+            height: auto
+            display: flex
+            &_text
+                width: 80%
+            &_img
+                width: 20%
+
+        @media (max-width: 420px)
+            padding: 20px
+            &_text
+                width: 70%
+            &_img
+                width: 30%
+
+        img
+            height: 50px
+            margin-bottom: 10px
+
+.call-to-action-night
+    background: radial-gradient(89.2% 486.94% at 89.2% 81.62%, #2195D7 0%, #00669F 100%)
+    padding: 40px 0px 30px 50px
+    color: white
+    border-radius: 10px
+    margin-top: 25px
+    @media (max-width: 830px)
+        padding: 25px
+
+    img
+        float: right
+        position: relative
+        top: -274px
+        @media (max-width: 830px)
+            display: none
+    h3
+        color: white
+        font-weight: 500
+    &_time
+        color: white
+        margin-top: 10px
+        margin-bottom: 50px
+
+    a
+        color: #2195D7
+        background-color: white
+        border: 2px solid white
+        padding: 13px 40px
+        border-radius: 50px
+        font-weight: 500
+        @media (max-width: 830px)
+            padding: 8px 20px
+
+    a:hover
+        cursor: pointer
+        color: white
+        background-color: #2195D7
+
+    &_number
+        margin-top: 50px
+
+        font-size: 17px
+        color: white
+        b
+            color: white
