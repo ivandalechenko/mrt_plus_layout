@@ -31,7 +31,7 @@ h3 {
   }
 }
 
-blockquote, h4 {
+blockquote {
   margin-top: 25px;
   font-weight: 500;
   font-size: 20px;
@@ -40,7 +40,7 @@ blockquote, h4 {
   border-left: 4px solid #147BB5;
 }
 @media (max-width: 1210px) {
-  blockquote, h4 {
+  blockquote {
     font-size: 18px;
   }
 }
@@ -200,7 +200,7 @@ body {
   background-color: #04A2A2;
   color: white;
   font-size: 16px;
-  padding: 17px 50px;
+  padding: 15px 50px;
 }
 @media (max-width: 400px) {
   .first-banner a {
@@ -1610,4 +1610,66 @@ body {
   .prices_element_price {
     width: 30%;
   }
+}
+
+.our-advantages-big hr {
+  border: none;
+  background-color: #D6D9DB;
+  color: #D6D9DB;
+  height: 1px;
+  width: 90%;
+  margin: auto;
+}
+.our-advantages-big_element:first-child {
+  padding-top: 35px;
+}
+.our-advantages-big_element {
+  display: flex;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+@media (max-width: 800px) {
+  .our-advantages-big_element {
+    flex-wrap: wrap;
+  }
+}
+.our-advantages-big_element_img {
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .our-advantages-big_element_img {
+    width: 100%;
+  }
+}
+.our-advantages-big_element_img img {
+  width: 188px;
+  height: 214px;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .our-advantages-big_element_img img {
+    width: 100%;
+    height: 125px;
+    margin-bottom: 20px;
+  }
+}
+.our-advantages-big_element_text_wrapper {
+  width: 70%;
+  margin: auto 0px;
+}
+@media (max-width: 800px) {
+  .our-advantages-big_element_text_wrapper {
+    width: 100%;
+    margin: 0px;
+  }
+}
+.our-advantages-big_element_text h4 {
+  font-weight: 500;
+  font-size: 22px;
+}
+.our-advantages-big_element_text p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 10px;
+  line-height: 24px;
 }

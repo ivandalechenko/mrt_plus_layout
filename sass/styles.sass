@@ -25,7 +25,7 @@ h3
     margin-top: 25px
     @media (max-width: 1210px)
         font-size: 24px
-blockquote, h4
+blockquote
     margin-top: 25px
     font-weight: 500
     font-size: 20px
@@ -128,7 +128,7 @@ body
         background-color: #04A2A2
         color: white
         font-size: 16px
-        padding: 17px 50px
+        padding: 15px 50px
         @media (max-width: 400px)
             padding: 15px
         @media (max-width: 330px)
@@ -1192,3 +1192,51 @@ body
             text-align: right
             @media (max-width: 830px)
                 width: 30%
+
+.our-advantages-big
+    hr
+        border: none
+        background-color: #D6D9DB
+        color: #D6D9DB
+        height: 1px
+        width: 90%
+        margin: auto
+
+    &_element:first-child
+        padding-top: 35px
+
+    &_element
+        display: flex
+        padding-top: 17px
+        padding-bottom: 15px
+        @media (max-width: 800px)
+            flex-wrap: wrap
+        &_img
+            width: 30%
+            @media (max-width: 800px)
+                width: 100%
+
+            img
+                width: 188px
+                height: 214px
+                border-radius: 10px
+                @media (max-width: 800px)
+                    width: 100%
+                    height: 125px
+                    margin-bottom: 20px
+
+        &_text_wrapper
+            width: 70%
+            margin: auto 0px
+            @media (max-width: 800px)
+                width: 100%
+                margin: 0px
+        &_text
+            h4
+                font-weight: 500
+                font-size: 22px
+            p
+                font-weight: 400
+                font-size: 17px
+                margin-top: 10px
+                line-height: 24px
