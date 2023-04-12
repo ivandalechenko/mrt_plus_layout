@@ -812,7 +812,7 @@ body {
   padding: 30px;
   margin-top: 30px;
   background-image: url(../img/usp_background_element.png);
-  background-position: 61px;
+  background-position: 60px 10px;
   background-repeat: no-repeat;
   background-size: 144%;
 }
@@ -1518,10 +1518,13 @@ body {
   color: white;
   border-radius: 10px;
   margin-top: 25px;
+  overflow: hidden;
+  max-height: 370px;
 }
 @media (max-width: 830px) {
   .call-to-action-night {
     padding: 25px;
+    max-height: auto;
   }
 }
 .call-to-action-night img {
@@ -1568,4 +1571,43 @@ body {
 }
 .call-to-action-night_number b {
   color: white;
+}
+
+.prices_element {
+  background-color: #F5F5F5;
+  padding: 20px;
+  margin-top: 25px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.prices_element_day {
+  display: flex;
+  border-bottom: 1px solid #D6D9DB;
+  padding-bottom: 20px;
+}
+.prices_element_night {
+  display: flex;
+  padding-top: 20px;
+}
+.prices_element_night .prices_element_name, .prices_element_night .prices_element_price {
+  color: #F65858;
+}
+.prices_element_name {
+  width: 85%;
+  padding-right: 20px;
+}
+@media (max-width: 830px) {
+  .prices_element_name {
+    width: 70%;
+  }
+}
+.prices_element_price {
+  width: 15%;
+  font-weight: 600;
+  text-align: right;
+}
+@media (max-width: 830px) {
+  .prices_element_price {
+    width: 30%;
+  }
 }
