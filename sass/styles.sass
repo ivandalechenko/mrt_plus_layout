@@ -10,7 +10,7 @@ $base_grey_color: #F5F5F5
 .container
     width: 1620px
     margin: 0 auto
-    @media (max-width: 1640px)
+    @media (max-width: 1630px)
         width: 1200px
     @media (max-width: 1220px)
         width: 100%
@@ -563,6 +563,7 @@ body
         padding-left: 40px
         padding-top: 20px
     h3
+        margin-top: 25px
         font-weight: 500
         font-size: 30px
         color: white
@@ -1211,12 +1212,25 @@ body
     h3
         color: white
         font-weight: 500
+
+        font-weight: 500
+        font-size: 30px
+        line-height: 35px
         @media (max-width: 830px)
             margin-top: 10px
+
+            font-weight: 400
+            font-size: 24px
+            line-height: 28px
     &_time
         color: white
         margin-top: 10px
         margin-bottom: 50px
+        font-size: 17px
+        line-height: 26px
+        @media (max-width: 830px)
+            font-size: 16px
+            line-height: 24px
 
     a
         color: #2195D7
@@ -1224,9 +1238,10 @@ body
         border: 2px solid white
         padding: 13px 40px
         border-radius: 50px
+        font-size: 16
         font-weight: 500
-        @media (max-width: 830px)
-            padding: 8px 20px
+        @media (max-width: 350px)
+            padding: 12px 26px
 
     a:hover
         cursor: pointer
@@ -1235,11 +1250,13 @@ body
 
     &_number
         margin-top: 50px
-
         font-size: 17px
         color: white
         b
             color: white
+        @media (max-width: 830px)
+            font-size: 17px
+            line-height: 21px
 
 .prices
     &_element

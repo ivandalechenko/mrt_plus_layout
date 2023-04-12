@@ -3,7 +3,7 @@
   width: 1620px;
   margin: 0 auto;
 }
-@media (max-width: 1640px) {
+@media (max-width: 1630px) {
   .container {
     width: 1200px;
   }
@@ -762,6 +762,7 @@ body {
   padding-top: 20px;
 }
 .call-to-action-get-consult h3 {
+  margin-top: 25px;
   font-weight: 500;
   font-size: 30px;
   color: white;
@@ -1649,16 +1650,30 @@ body {
 .call-to-action-night h3 {
   color: white;
   font-weight: 500;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
 }
 @media (max-width: 830px) {
   .call-to-action-night h3 {
     margin-top: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 .call-to-action-night_time {
   color: white;
   margin-top: 10px;
   margin-bottom: 50px;
+  font-size: 17px;
+  line-height: 26px;
+}
+@media (max-width: 830px) {
+  .call-to-action-night_time {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .call-to-action-night a {
   color: #2195D7;
@@ -1666,11 +1681,12 @@ body {
   border: 2px solid white;
   padding: 13px 40px;
   border-radius: 50px;
+  font-size: 16;
   font-weight: 500;
 }
-@media (max-width: 830px) {
+@media (max-width: 350px) {
   .call-to-action-night a {
-    padding: 8px 20px;
+    padding: 12px 26px;
   }
 }
 .call-to-action-night a:hover {
@@ -1685,6 +1701,12 @@ body {
 }
 .call-to-action-night_number b {
   color: white;
+}
+@media (max-width: 830px) {
+  .call-to-action-night_number {
+    font-size: 17px;
+    line-height: 21px;
+  }
 }
 
 .prices_element {
