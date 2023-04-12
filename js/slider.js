@@ -168,3 +168,7 @@ $('.licence-slider').slick({
     }]
 });
 
+$('.helpful-information .helpful-information_element .helpful-information_element_img img').click(function () {
+    $(this).toggleClass('active');
+    $(this).parent().parent().toggleClass('active_element');
+});

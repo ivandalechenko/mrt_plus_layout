@@ -2011,3 +2011,58 @@ body {
   border: 2px solid #04A2A2;
   border-radius: 50px;
 }
+
+.helpful-information {
+  margin-top: 25px;
+}
+.helpful-information_element {
+  margin-top: 15px;
+  padding: 20px 30px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.helpful-information_element h3 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 150%;
+  padding-right: 30px;
+}
+.helpful-information_element p {
+  font-size: 16px;
+  line-height: 24px;
+  display: none;
+  transition: 0.3s;
+}
+.helpful-information_element_img {
+  height: 0px;
+}
+.helpful-information_element_img .active {
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+.helpful-information_element_img img {
+  position: relative;
+  right: -97%;
+  top: -6px;
+  transition: 0.3s;
+}
+@media (max-width: 800px) {
+  .helpful-information_element_img img {
+    right: -96%;
+  }
+}
+@media (max-width: 500px) {
+  .helpful-information_element_img img {
+    right: -95%;
+  }
+}
+.helpful-information_element_img img:hover {
+  cursor: pointer;
+}
+.helpful-information .active_element {
+  border: 1px solid #147BB5;
+}
+.helpful-information .active_element p {
+  display: block;
+}
