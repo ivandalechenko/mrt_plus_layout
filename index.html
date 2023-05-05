@@ -12,7 +12,94 @@
 
 <body>
 
+    <header>
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <img src="iimg/logo.svg" />
+                </div>
+                <div class="adress">
+                    <div class="text">
+                        Центр экспертной диагностики
+                    </div>
+                    <div class="location">
+                        <button>
+                            <img src="iimg/point.svg">
+                            <span class="text">Ростов-на-Дону, ул.Погодина, 83а</span>
+                            <img src="iimg/expand_arrow.svg">
+                        </button>
+                    </div>
+                </div>
+                <div class="work_time">
+                    <div class="text">
+                        График работы:
+                    </div>
+                    <div class="time">
+                        с 8:00 до 20:00
+                    </div>
+                </div>
+                <div class="connect">
+                    <a href="#"><img src="iimg/vk.svg" /></a>
+                    <a href="#"><img src="iimg/ok.svg" /></a>
+                    <a href="#"><img src="iimg/tg.svg" /></a>
+                    <a href="#"><img src="iimg/mail.svg" /></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="phone">
+                    <div class="text">
+                        Запись по телефону
+                    </div>
+                    <div class="num">
+                        8 (863) 320-4937
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn_book">Запишитесь на прием</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="links_and_search">
+        <div class="container">
+            <div class="links">
 
+                <a href="#">
+                    О центре
+                </a>
+                <a href="#">
+                    Услуги
+                </a>
+                <a href="#">
+                    Анализы
+                </a>
+                <a href="#">
+                    Врачи
+                </a>
+                <a href="#">
+                    Цены
+                </a>
+                <a href="#">
+                    Акции
+                </a>
+                <a href="#">
+                    Отзывы
+                </a>
+                <a href="#">
+                    Контакты
+                </a>
+            </div>
+            <div class="search">
+                <img src="iimg/eye.svg" class="eye" />
+                <form action="/search/" method="GET">
+                    <input type="hidden" name="area" value="site2">
+                    <button type="submit"></button>
+                    <input type="text" size="20" name="search_query" placeholder="Поиск по сайту..."
+                        id="nc_search_query" autocomplete="off">
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/slick.js"></script>

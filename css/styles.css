@@ -2088,3 +2088,186 @@ body {
 .helpful-information .active_element p {
   display: block;
 }
+
+header {
+  padding: 15px 0px;
+  background: linear-gradient(89.9deg, #147BB5 0%, #04A2A2 100%);
+}
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .container .left {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .container .adress {
+  margin: auto 0;
+  padding: 0px 24px 0px 48px;
+}
+header .container .adress .location button {
+  margin-top: 5px;
+  background-color: transparent;
+  transition: 0.2s;
+}
+header .container .adress .location button .text {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+}
+header .container .adress .location button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+header .container .adress .text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+header .container .work_time {
+  margin: auto 0;
+  padding: 0px 25px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+header .container .work_time .time {
+  margin-top: 5px;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+header .container .work_time .text {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+header .container .connect {
+  margin: auto 0;
+  padding: 0px 25px;
+}
+header .container .connect a {
+  transition: 0.2s;
+}
+header .container .connect a:hover {
+  opacity: 0.7;
+}
+header .container .right {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .container .phone {
+  margin: auto 0;
+  padding: 0px 20px;
+}
+header .container .phone .text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #FFFFFF;
+}
+header .container .phone .num {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: right;
+  color: #FFFFFF;
+}
+header .container .button {
+  margin: auto 0;
+}
+header .container .button .btn_book {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #04A2A2;
+  border-radius: 50px;
+  padding: 9px 21px;
+  transition: 0.2s;
+  border: 2px solid white;
+}
+header .container .button .btn_book:hover {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.links_and_search {
+  background-color: rgb(245, 245, 245);
+}
+.links_and_search .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 54px;
+}
+.links_and_search .search {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+}
+.links_and_search .search .eye {
+  height: 22px;
+  margin: auto;
+}
+.links_and_search .search button {
+  position: relative;
+  background-image: url(../iimg/search.svg);
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  left: 290px;
+  top: 3px;
+  transition: 0.2s;
+}
+.links_and_search .search button:hover {
+  opacity: 0.7;
+}
+.links_and_search .search input {
+  background-color: rgb(231, 231, 231);
+  padding: 10px 18px;
+  border-radius: 50px;
+  width: 300px;
+}
+.links_and_search .links {
+  margin: auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.links_and_search .links a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #444444;
+  transition: 0.2s;
+}
+.links_and_search .links a:hover {
+  opacity: 0.7;
+}
