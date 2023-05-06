@@ -3160,3 +3160,74 @@ header .container .button .btn_book:hover {
   border-radius: 10px;
   width: 100%;
 }
+
+footer {
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .left_col {
+  padding-top: 65px;
+  width: 77%;
+}
+footer .left_col .left_col_inner {
+  width: 1322px;
+  color: white;
+  margin-left: auto;
+}
+footer .left_col .left_col_inner .first_row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .left_col .left_col_inner .first_row .first_col h4, footer .left_col .left_col_inner .first_row .second_col h4, footer .left_col .left_col_inner .first_row .third_col h4, footer .left_col .left_col_inner .first_row .fourth_col h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+footer .left_col .left_col_inner .first_row .first_col ul, footer .left_col .left_col_inner .first_row .second_col ul, footer .left_col .left_col_inner .first_row .third_col ul, footer .left_col .left_col_inner .first_row .fourth_col ul {
+  padding-left: 10px;
+}
+footer .left_col .left_col_inner .first_row .first_col li::marker, footer .left_col .left_col_inner .first_row .second_col li::marker, footer .left_col .left_col_inner .first_row .third_col li::marker, footer .left_col .left_col_inner .first_row .fourth_col li::marker {
+  color: #A6A6A6;
+}
+footer .left_col .left_col_inner .first_row .first_col li, footer .left_col .left_col_inner .first_row .second_col li, footer .left_col .left_col_inner .first_row .third_col li, footer .left_col .left_col_inner .first_row .fourth_col li {
+  list-style-type: "•";
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+footer .left_col .left_col_inner .first_row .first_col li a, footer .left_col .left_col_inner .first_row .second_col li a, footer .left_col .left_col_inner .first_row .third_col li a, footer .left_col .left_col_inner .first_row .fourth_col li a {
+  color: #A6A6A6;
+}
+footer .left_col .left_col_inner .first_row .first_col {
+  width: 34%;
+}
+footer .left_col .left_col_inner .first_row .second_col, footer .left_col .left_col_inner .first_row .third_col, footer .left_col .left_col_inner .first_row .fourth_col {
+  width: 22%;
+}
+footer .left_col .left_col_inner .first_row .second_col a, footer .left_col .left_col_inner .first_row .third_col a, footer .left_col .left_col_inner .first_row .fourth_col a {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #A6A6A6;
+}
+footer .left_col .left_col_inner .first_row .second_col a:hover, footer .left_col .left_col_inner .first_row .third_col a:hover, footer .left_col .left_col_inner .first_row .fourth_col a:hover {
+  opacity: 0.7;
+}
+footer .right_col {
+  padding-top: 65px;
+  width: 23%;
+  background-color: rgb(4, 162, 162);
+}
+footer .right_col .right_col_inner {
+  width: 298px;
+  color: white;
+}
