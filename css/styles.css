@@ -2520,3 +2520,124 @@ header .container .button .btn_book:hover {
   width: 547px;
   height: 381px;
 }
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-top: 90px;
+}
+.advantages a {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border: 2px solid rgb(20, 123, 181);
+  background-color: rgb(20, 123, 181);
+  padding: 14px 66px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+.advantages ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.advantages li {
+  list-style-image: url(../img/circle.svg);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  padding-top: 10px;
+}
+.advantages a:hover {
+  opacity: 0.7;
+}
+.advantages h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+}
+.advantages .left {
+  width: 668px;
+  height: 607px;
+  background: linear-gradient(184.53deg, #EFF5F8 41.27%, rgba(255, 255, 255, 0) 103.67%), url(../iimg/advantages/left.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 53px 111px 0px 59px;
+  background-position-y: center, 170px;
+  background-repeat: no-repeat;
+}
+.advantages .right {
+  width: 668px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.advantages .right h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.advantages .right .top {
+  width: 688px;
+  height: 293px;
+  background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 38.08%, rgba(255, 255, 255, 0) 71.71%), url(../iimg/advantages/right_top.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 40px;
+}
+.advantages .right .top li {
+  width: 291px;
+}
+.advantages .right .top a {
+  padding: 14px 28px;
+}
+.advantages .right .bottom {
+  width: 688px;
+  height: 293px;
+  background: linear-gradient(79.89deg, #B7E0E0 0%, #EFF5F8 99.02%);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+.advantages .right .bottom li {
+  width: 291px;
+}
+.advantages .right .bottom a {
+  padding: 14px 54px;
+}
+.advantages .right .bottom h4 {
+  width: 309px;
+}
+.advantages .right .bottom p {
+  width: 309px;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+}
+.advantages .right .bottom .image {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: -20px;
+  left: 240px;
+}
+.advantages .right .bottom .image img {
+  width: 400px;
+}
