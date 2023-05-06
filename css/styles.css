@@ -2641,3 +2641,199 @@ header .container .button .btn_book:hover {
 .advantages .right .bottom .image img {
   width: 400px;
 }
+
+.usp_expert {
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 1396px;
+  height: 291px;
+  text-align: center;
+  background-image: url(../iimg/usp_expert.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 42px;
+}
+.usp_expert h4 {
+  width: 625px;
+  margin: 0 auto;
+  color: white;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+.usp_expert p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: white;
+  width: 562px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.usp_expert a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 13px 31px;
+  background-color: rgb(4, 162, 162);
+  display: inline-block;
+  margin-top: 28px;
+  border-radius: 50px;
+  color: white;
+}
+.usp_expert a:hover {
+  opacity: 0.7;
+}
+
+.expert_tools {
+  padding-top: 87px;
+  padding-bottom: 113px;
+  margin-top: 100px;
+  background-color: rgb(239, 245, 248);
+}
+.expert_tools h3 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+.expert_tools .nav {
+  width: 1396px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.expert_tools .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.expert_tools .buttons button {
+  height: 40px;
+  width: 120px;
+  margin: auto 0;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #C9C9C9;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.2s;
+}
+.expert_tools .buttons button:hover {
+  border: 1px solid rgb(20, 123, 181);
+  cursor: pointer;
+}
+.expert_tools .buttons .active {
+  color: white;
+  background-color: rgb(20, 123, 181);
+  border: 1px solid rgb(20, 123, 181);
+}
+.expert_tools .content {
+  width: 1396px;
+  height: 455px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 37px;
+  padding: 36px 31px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.expert_tools .content img {
+  width: 515px;
+  height: 383px;
+  border-radius: 5px;
+}
+.expert_tools .content .text {
+  margin: auto 0;
+  padding-left: 57px;
+  width: 720px;
+}
+.expert_tools .content .text h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.expert_tools .content .text p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+}
+.expert_tools .content .text ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.expert_tools .content .text li {
+  list-style-image: url(../img/circle.svg);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  padding: 5px 0px;
+}
+
+.usp_thank {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1396px;
+  height: 254px;
+  background: linear-gradient(88.1deg, #04A2A2 0%, #147BB5 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.usp_thank .mrt {
+  position: relative;
+  top: -40px;
+  left: -10px;
+  height: 0px;
+  width: 0px;
+}
+.usp_thank .mrt img {
+  height: 400px;
+}
+.usp_thank h4 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0 auto;
+  margin-top: 47px;
+}
+.usp_thank a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #147BB5;
+  padding: 13px 0px;
+  background-color: white;
+  border-radius: 50px;
+  width: 224px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 28px;
+  border: 2px solid white;
+}
+.usp_thank .right {
+  position: relative;
+  left: 1010px;
+  height: 0px;
+  width: 0px;
+}
+.usp_thank .right img {
+  height: 260px;
+  border-radius: 180px 0px 0px 180px;
+}
+.usp_thank a:hover {
+  color: white;
+  background-color: transparent;
+}
