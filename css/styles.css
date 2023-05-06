@@ -2273,6 +2273,89 @@ header .container .button .btn_book:hover {
 }
 
 .banner {
-  background: linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%);
+  background-image: url(../iimg/banner_background.png), linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%);
+  background-position: right;
   border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: 46px;
+}
+.banner h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  background-color: rgb(20, 123, 181);
+  padding: 14px 31px 14px 63px;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
+  margin-top: 44px;
+  display: inline-block;
+}
+.banner p {
+  padding: 13px 31px;
+  margin-top: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+}
+.banner .be_careful {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 49px;
+}
+.banner a {
+  margin-top: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 14px 58px;
+  background: #04A2A2;
+  border-radius: 50px;
+  color: white;
+  border: 2px solid #04A2A2;
+  display: inline-block;
+}
+.banner a:hover {
+  color: #04A2A2;
+  background: transparent;
+}
+.banner .info {
+  width: 700px;
+  padding-left: 68px;
+  padding-bottom: 20px;
+}
+.banner .banner_decor_element {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  top: -220px;
+  right: -786px;
+}
+.banner .content_img {
+  position: relative;
+  float: right;
+  right: 451px;
+  top: -123px;
+  width: 0px;
+  height: 0px;
+}
+.banner .content_img img {
+  border-radius: 400px;
+  border: 10px solid white;
+  width: 481px;
+  height: 481px;
 }
