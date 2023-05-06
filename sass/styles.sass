@@ -7,6 +7,12 @@ $base_green_color: #EBF4F4
 $base_yellow_color: #FFF8B7
 $base_grey_color: #F5F5F5
 
+.prev:hover, .next:hover
+    opacity: .6
+
+.prev, .next
+    transition: .2s
+
 .container
     width: 1620px
     margin: 0 auto
@@ -1559,6 +1565,7 @@ body
             display: block
 
 // for index.html below
+
 header
     padding: 15px 0px
     background: linear-gradient(89.9deg, #147BB5 0%, #04A2A2 100%)
@@ -2183,3 +2190,122 @@ header
     a:hover
         color: white
         background-color: transparent
+
+.feedback_main
+    margin: 0 auto
+    margin-top: 100px
+    width: 1396px
+    .header
+        width: 100%
+        h3
+            font-weight: 400
+            font-size: 44px
+            line-height: 52px
+            text-align: center
+            text-transform: uppercase
+            a
+                color: #444444
+                text-decoration: underline
+            a:hover
+                opacity: .7
+    .feedback_main_content
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 50px
+        .stars
+            width: 300px
+            .num
+                font-weight: 600
+                font-size: 60px
+                line-height: 70px
+                margin-bottom: 30px
+            .percent
+                font-weight: 400
+                font-size: 17px
+                margin-top: 15px
+                img
+                    margin-top: 5px
+                span
+                    font-weight: 700
+                    padding-right: 20px
+            a
+                margin-top: 50px
+                color: white
+                background-color: rgba(20, 123, 181, 1)
+                padding: 11px 57px
+                border-radius: 50px
+                display: inline-block
+                font-weight: 400
+                font-size: 16px
+                border: 2px solid rgba(20, 123, 181, 1)
+            a:hover
+                color: rgba(20, 123, 181, 1)
+                background: transparent
+        .feedback_main_slider
+            width: 828px
+            margin: auto 0
+            .prev, .next
+                top: 45%
+            .next
+                right: -60px
+            .prev
+                left: -60px
+
+            .feedback_list_element
+                width: 100%
+                padding: 80px 70px
+                background-color: rgba(245, 245, 245, 1)
+                border-radius: 10px
+                .name
+                    font-weight: 600
+                    font-size: 18px
+                .date_stars
+                    display: flex
+                    flex-wrap: wrap
+                    column-gap: 20px
+                .date
+                    font-weight: 400
+                    font-size: 15px
+                    color: rgba(154, 154, 154, 1)
+                    display: inline-block
+                    margin: auto 0
+                .text
+                    font-size: 18px
+                    line-height: 150%
+                    margin-top: 10px
+
+.doctors_list
+    margin-top: 90px
+    background-color: rgba(239, 245, 248, 1)
+    padding: 67px 120px 105px
+    h4
+        font-weight: 400
+        font-size: 44px
+        line-height: 52px
+        text-align: center
+        text-transform: uppercase
+
+.doctors-main-slider
+    margin-top: 60px
+    .prev, .next
+        top: 45%
+    .next
+        right: -60px
+    .prev
+        left: -60px
+    .name
+        padding: 0px 10px
+    .doctors-slider__element
+        width: 246px
+        background-color: white
+    .rank
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+        color: #9A9A9A
+    .doctor_exp
+        padding: 7px 30px
+        background-color: rgba(245, 245, 245, 1)
+        font-weight: 500
+        font-size: 14px

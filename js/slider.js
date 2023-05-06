@@ -179,6 +179,28 @@ $('.photos_slider').slick({
 });
 
 
+$('.feedback_main_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
+});
+
+
+$('.doctors-main-slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: true,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: "<img src='iimg/left_white_arrow.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='iimg/right_white_arrow.svg' class='next' alt='2'>"
+});
+
 
 
 

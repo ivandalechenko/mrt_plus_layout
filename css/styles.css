@@ -1,5 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.prev:hover, .next:hover {
+  opacity: 0.6;
+}
+
+.prev, .next {
+  transition: 0.2s;
+}
+
 .container {
   width: 1620px;
   margin: 0 auto;
@@ -2836,4 +2844,155 @@ header .container .button .btn_book:hover {
 .usp_thank a:hover {
   color: white;
   background-color: transparent;
+}
+
+.feedback_main {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1396px;
+}
+.feedback_main .header {
+  width: 100%;
+}
+.feedback_main .header h3 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.feedback_main .header h3 a {
+  color: #444444;
+  text-decoration: underline;
+}
+.feedback_main .header h3 a:hover {
+  opacity: 0.7;
+}
+.feedback_main .feedback_main_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.feedback_main .feedback_main_content .stars {
+  width: 300px;
+}
+.feedback_main .feedback_main_content .stars .num {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.feedback_main .feedback_main_content .stars .percent {
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.feedback_main .feedback_main_content .stars .percent img {
+  margin-top: 5px;
+}
+.feedback_main .feedback_main_content .stars .percent span {
+  font-weight: 700;
+  padding-right: 20px;
+}
+.feedback_main .feedback_main_content .stars a {
+  margin-top: 50px;
+  color: white;
+  background-color: rgb(20, 123, 181);
+  padding: 11px 57px;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  border: 2px solid rgb(20, 123, 181);
+}
+.feedback_main .feedback_main_content .stars a:hover {
+  color: rgb(20, 123, 181);
+  background: transparent;
+}
+.feedback_main .feedback_main_content .feedback_main_slider {
+  width: 828px;
+  margin: auto 0;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .prev, .feedback_main .feedback_main_content .feedback_main_slider .next {
+  top: 45%;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .next {
+  right: -60px;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .prev {
+  left: -60px;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .feedback_list_element {
+  width: 100%;
+  padding: 80px 70px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .feedback_list_element .name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .feedback_list_element .date_stars {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .feedback_list_element .date {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(154, 154, 154);
+  display: inline-block;
+  margin: auto 0;
+}
+.feedback_main .feedback_main_content .feedback_main_slider .feedback_list_element .text {
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.doctors_list {
+  margin-top: 90px;
+  background-color: rgb(239, 245, 248);
+  padding: 67px 120px 105px;
+}
+.doctors_list h4 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.doctors-main-slider {
+  margin-top: 60px;
+}
+.doctors-main-slider .prev, .doctors-main-slider .next {
+  top: 45%;
+}
+.doctors-main-slider .next {
+  right: -60px;
+}
+.doctors-main-slider .prev {
+  left: -60px;
+}
+.doctors-main-slider .name {
+  padding: 0px 10px;
+}
+.doctors-main-slider .doctors-slider__element {
+  width: 246px;
+  background-color: white;
+}
+.doctors-main-slider .rank {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #9A9A9A;
+}
+.doctors-main-slider .doctor_exp {
+  padding: 7px 30px;
+  background-color: rgb(245, 245, 245);
+  font-weight: 500;
+  font-size: 14px;
 }
