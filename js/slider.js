@@ -202,6 +202,19 @@ $('.doctors-main-slider').slick({
 });
 
 
+$('.license_main_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: "<img src='iimg/left_white_arrow.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='iimg/right_white_arrow.svg' class='next' alt='2'>"
+});
+
+
+
 
 
 

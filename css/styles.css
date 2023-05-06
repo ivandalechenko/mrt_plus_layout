@@ -2996,3 +2996,94 @@ header .container .button .btn_book:hover {
   font-weight: 500;
   font-size: 14px;
 }
+
+.whywe_main {
+  padding-top: 90px;
+}
+.whywe_main h4 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.whywe_main_flex {
+  width: 1623px;
+  margin: 0 auto;
+  margin-top: 43px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.whywe_main_flex_element:last-child img {
+  width: 100%;
+  border-radius: 10px;
+}
+.whywe_main_flex_element {
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.whywe_main_flex_element .green {
+  background-color: rgb(235, 244, 244);
+}
+.whywe_main_flex_element .blue {
+  background-color: rgb(239, 245, 248);
+}
+.whywe_main_flex_element img {
+  width: 259px;
+  height: 274px;
+}
+.whywe_main_flex_element_content {
+  width: 521px;
+  height: 274px;
+  border-radius: 10px;
+  display: flex;
+}
+.whywe_main_flex_element_content .title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.whywe_main_flex_element_content .inner {
+  margin: auto;
+  padding: 0px 30px;
+}
+.whywe_main_flex_element_content .inner ul {
+  padding-left: 20px;
+}
+.whywe_main_flex_element_content .inner li {
+  list-style-type: "•";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 8px;
+  padding-left: 15px;
+}
+
+.license_main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.license_main h4 {
+  margin-top: 90px;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.license_main img {
+  border: 1px solid rgb(217, 217, 217);
+  width: 100%;
+}
+.license_main .license_main_slider_wrapper {
+  padding: 0px 20px;
+}
+.license_main .license_main_slider {
+  padding-top: 44px;
+}
