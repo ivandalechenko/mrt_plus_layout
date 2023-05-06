@@ -3087,3 +3087,76 @@ header .container .button .btn_book:hover {
 .license_main .license_main_slider {
   padding-top: 44px;
 }
+
+.map_main {
+  margin: 0 auto;
+  width: 1620px;
+  margin-top: 100px;
+}
+.map_main .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.map_main .nav .text {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+.map_main .nav .link {
+  margin: auto 0;
+}
+.map_main .nav .link a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #147BB5;
+}
+.map_main .nav .link a:hover {
+  opacity: 0.7;
+}
+.map_main .text_and_map {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.map_main .text_and_map .text {
+  background-color: rgb(245, 245, 245);
+  width: 20%;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.map_main .text_and_map .text .text_element {
+  padding: 20px 0px;
+}
+.map_main .text_and_map .text .text_element:not(:last-child) {
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+.map_main .text_and_map .text .city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 10px;
+}
+.map_main .text_and_map .text ul {
+  padding-left: 10px;
+}
+.map_main .text_and_map .text li {
+  list-style-type: "•";
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 5px;
+  line-height: 19px;
+}
+.map_main .text_and_map .map {
+  width: 78%;
+}
+.map_main .text_and_map .map img {
+  border-radius: 10px;
+  width: 100%;
+}
