@@ -168,6 +168,22 @@ $('.licence-slider').slick({
     }]
 });
 
+$('.photos_slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
+});
+
+
+
+
+
+
+
 $('.helpful-information .helpful-information_element .helpful-information_element_img img').click(function () {
     $(this).toggleClass('active');
     $(this).parent().parent().toggleClass('active_element');

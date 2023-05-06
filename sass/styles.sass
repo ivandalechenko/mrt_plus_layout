@@ -21,6 +21,14 @@ h1, h2, h3, h4
     font-weight: 400
 
 .text-block
+    h2
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 44px
+        line-height: 52px
+        text-align: center
+        text-transform: uppercase
     h3
         font-weight: 400
         font-size: 34px
@@ -1781,3 +1789,126 @@ header
             border: 10px solid white
             width: 481px
             height: 481px
+.mt62
+    margin-top: 62px
+.mt84
+    margin-top: 84px
+
+.services_navigation
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    column-gap: 6px
+    margin-top: 38px
+    &_element
+        width: 187px
+        padding: 20px 0px
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        background-color: rgba(225, 225, 225, 1)
+        text-align: center
+        border-radius: 10px 10px 0px 0px
+        transition: .2s
+    &_element:hover
+        cursor: pointer
+        opacity: .7
+
+    .active
+        color: white
+        background-color: rgba(20, 123, 181, 1)
+
+.services
+    .info
+        background-color: rgba(245, 245, 245, 1)
+        padding: 70px
+        width: 1400px
+        margin: 0 auto
+        border-radius: 10px
+        .spec
+            display: flex
+            flex-wrap: wrap
+            ul
+                width: 33%
+            li
+                list-style-image: url(../img/circle.svg)
+                list-style-position: inside
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 45px
+
+        .diag
+            display: flex
+            flex-wrap: wrap
+            row-gap: 60px
+            &_element
+                width: 40%
+                h4
+                    a
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 18px
+                        line-height: 21px
+                        color: #147BB5
+                    a:hover
+                        opacity: .7
+                ul
+                    margin-top: 20px
+                li
+                    list-style-position: inside
+                    list-style-type: '•'
+                    a
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 30px
+                        color: #444444
+                    a:hover
+                        color: rgba(20, 123, 181, 1)
+.dnone
+    display: none
+
+.location_list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-top: 28px
+    column-gap: 6px
+    button
+        background-color: transparent
+        padding: 10px 22px
+        border-radius: 50px
+        border: 1px solid #C9C9C9
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        transition: .2s
+    button:hover
+        border: 1px solid rgba(20, 123, 181, 1)
+        cursor: pointer
+    .active
+        color: white
+        background-color: rgba(20, 123, 181, 1)
+        border: 1px solid rgba(20, 123, 181, 1)
+
+.photos_slider_wrap
+    width: 1680px
+    display: block
+    margin: 0 auto
+    margin-top: 50px
+    .next, .prev
+        top: 182px
+    .photos_slider_element
+        padding: 10px
+        img
+            border-radius: 10px
+            width: 547px
+            height: 381px

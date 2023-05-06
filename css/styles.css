@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 .container {
   width: 1620px;
@@ -20,6 +21,15 @@ h1, h2, h3, h4 {
   font-weight: 400;
 }
 
+.text-block h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .text-block h3 {
   font-weight: 400;
   font-size: 34px;
@@ -2358,4 +2368,155 @@ header .container .button .btn_book:hover {
   border: 10px solid white;
   width: 481px;
   height: 481px;
+}
+
+.mt62 {
+  margin-top: 62px;
+}
+
+.mt84 {
+  margin-top: 84px;
+}
+
+.services_navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  margin-top: 38px;
+}
+.services_navigation_element {
+  width: 187px;
+  padding: 20px 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: rgb(225, 225, 225);
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.2s;
+}
+.services_navigation_element:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.services_navigation .active {
+  color: white;
+  background-color: rgb(20, 123, 181);
+}
+
+.services .info {
+  background-color: rgb(245, 245, 245);
+  padding: 70px;
+  width: 1400px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.services .info .spec {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .info .spec ul {
+  width: 33%;
+}
+.services .info .spec li {
+  list-style-image: url(../img/circle.svg);
+  list-style-position: inside;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 45px;
+}
+.services .info .diag {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 60px;
+}
+.services .info .diag_element {
+  width: 40%;
+}
+.services .info .diag_element h4 a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #147BB5;
+}
+.services .info .diag_element h4 a:hover {
+  opacity: 0.7;
+}
+.services .info .diag_element ul {
+  margin-top: 20px;
+}
+.services .info .diag_element li {
+  list-style-position: inside;
+  list-style-type: "•";
+}
+.services .info .diag_element li a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+}
+.services .info .diag_element li a:hover {
+  color: rgb(20, 123, 181);
+}
+
+.dnone {
+  display: none;
+}
+
+.location_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 28px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.location_list button {
+  background-color: transparent;
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 1px solid #C9C9C9;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.2s;
+}
+.location_list button:hover {
+  border: 1px solid rgb(20, 123, 181);
+  cursor: pointer;
+}
+.location_list .active {
+  color: white;
+  background-color: rgb(20, 123, 181);
+  border: 1px solid rgb(20, 123, 181);
+}
+
+.photos_slider_wrap {
+  width: 1680px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.photos_slider_wrap .next, .photos_slider_wrap .prev {
+  top: 182px;
+}
+.photos_slider_wrap .photos_slider_element {
+  padding: 10px;
+}
+.photos_slider_wrap .photos_slider_element img {
+  border-radius: 10px;
+  width: 547px;
+  height: 381px;
 }
