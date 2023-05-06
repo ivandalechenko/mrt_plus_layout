@@ -20,7 +20,7 @@
 @media (max-width: 1220px) {
   .container {
     width: 100%;
-    padding: 15px;
+    padding: 0px 15px;
   }
 }
 
@@ -37,6 +37,12 @@ h1, h2, h3, h4 {
   line-height: 52px;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 750px) {
+  .text-block h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 .text-block h3 {
   font-weight: 400;
@@ -122,6 +128,7 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #444444;
+  padding-bottom: 200px;
 }
 
 .row {
@@ -2106,22 +2113,138 @@ body {
   display: block;
 }
 
+.burger_menu {
+  background: #444444;
+  padding: 15px 15px;
+  display: none;
+}
+@media (max-width: 1100px) {
+  .burger_menu {
+    display: block;
+  }
+}
+.burger_menu .phone {
+  color: #ffffff;
+  font-size: 22px;
+}
+.burger_menu .checkbox {
+  position: absolute;
+  display: block;
+  height: 50px;
+  width: 50px;
+  top: 4px;
+  right: 4px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+.burger_menu input[type=checkbox]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+.burger_menu input[type=checkbox]:checked ~ .burger .line1 {
+  transform: rotate(45deg);
+}
+.burger_menu input[type=checkbox]:checked ~ .burger .line2 {
+  transform: scaleY(0);
+}
+.burger_menu input[type=checkbox]:checked ~ .burger .line3 {
+  transform: rotate(-45deg);
+}
+.burger_menu input[type=checkbox]:checked ~ .links {
+  transition: 1s ease-out;
+  height: 100vh;
+}
+.burger_menu .links {
+  height: 0px;
+  overflow: hidden;
+  transition: 1s ease-out;
+}
+.burger_menu .links a {
+  display: block;
+}
+.burger_menu .burger {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burger_menu .burger .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+.burger_menu .burger .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.burger_menu .burger .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.burger_menu .burger .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
 header {
   padding: 15px 0px;
   background: linear-gradient(89.9deg, #147BB5 0%, #04A2A2 100%);
+}
+@media (max-width: 1220px) {
+  header {
+    padding: 15px 0px;
+  }
 }
 header .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 20px;
+}
+@media (max-width: 1630px) {
+  header .container {
+    width: 1300px;
+  }
+}
+@media (max-width: 1320px) {
+  header .container {
+    width: 1200px;
+  }
+}
+@media (max-width: 1220px) {
+  header .container {
+    width: 100%;
+    padding: 0px 15px;
+  }
 }
 header .container .left {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 900px) {
+  header .container .left {
+    width: 100%;
+    justify-content: center;
+  }
+}
 header .container .adress {
   margin: auto 0;
   padding: 0px 24px 0px 48px;
+}
+@media (max-width: 900px) {
+  header .container .adress {
+    display: block;
+    border: none;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
 }
 header .container .adress .location button {
   margin-top: 5px;
@@ -2155,6 +2278,13 @@ header .container .work_time {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 1150px) {
+  header .container .work_time {
+    display: block;
+    border: none;
+    padding: 0px;
+  }
+}
 header .container .work_time .time {
   margin-top: 5px;
   color: white;
@@ -2164,6 +2294,11 @@ header .container .work_time .time {
   font-size: 16px;
   line-height: 19px;
 }
+@media (max-width: 900px) {
+  header .container .work_time .time {
+    display: inline-block;
+  }
+}
 header .container .work_time .text {
   color: white;
   font-family: "Roboto";
@@ -2172,9 +2307,19 @@ header .container .work_time .text {
   font-size: 14px;
   line-height: 16px;
 }
+@media (max-width: 900px) {
+  header .container .work_time .text {
+    display: inline-block;
+  }
+}
 header .container .connect {
   margin: auto 0;
   padding: 0px 25px;
+}
+@media (max-width: 1320px) {
+  header .container .connect {
+    display: none;
+  }
 }
 header .container .connect a {
   transition: 0.2s;
@@ -2186,9 +2331,20 @@ header .container .right {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 900px) {
+  header .container .right {
+    width: 100%;
+    justify-content: center;
+  }
+}
 header .container .phone {
   margin: auto 0;
   padding: 0px 20px;
+}
+@media (max-width: 1100px) {
+  header .container .phone {
+    display: none;
+  }
 }
 header .container .phone .text {
   font-family: "Roboto";
@@ -2239,6 +2395,11 @@ header .container .button .btn_book:hover {
   justify-content: space-between;
   height: 54px;
 }
+@media (max-width: 1100px) {
+  .links_and_search .container {
+    justify-content: center;
+  }
+}
 .links_and_search .search {
   display: flex;
   justify-content: space-between;
@@ -2259,6 +2420,11 @@ header .container .button .btn_book:hover {
   top: 3px;
   transition: 0.2s;
 }
+@media (max-width: 400px) {
+  .links_and_search .search button {
+    left: 190px;
+  }
+}
 .links_and_search .search button:hover {
   opacity: 0.7;
 }
@@ -2268,12 +2434,22 @@ header .container .button .btn_book:hover {
   border-radius: 50px;
   width: 300px;
 }
+@media (max-width: 400px) {
+  .links_and_search .search input {
+    width: 200px;
+  }
+}
 .links_and_search .links {
   margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 30px;
        column-gap: 30px;
+}
+@media (max-width: 1100px) {
+  .links_and_search .links {
+    display: none;
+  }
 }
 .links_and_search .links a {
   font-family: "Roboto";
@@ -2297,6 +2473,16 @@ header .container .button .btn_book:hover {
   background-repeat: no-repeat;
   overflow: hidden;
   margin-top: 46px;
+}
+@media (max-width: 1150px) {
+  .banner {
+    background-image: linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%);
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    display: none;
+  }
 }
 .banner h2 {
   font-family: "Roboto";
@@ -2362,6 +2548,11 @@ header .container .button .btn_book:hover {
   top: -220px;
   right: -786px;
 }
+@media (max-width: 1150px) {
+  .banner .banner_decor_element {
+    display: none;
+  }
+}
 .banner .content_img {
   position: relative;
   float: right;
@@ -2369,6 +2560,11 @@ header .container .button .btn_book:hover {
   top: -123px;
   width: 0px;
   height: 0px;
+}
+@media (max-width: 1150px) {
+  .banner .content_img {
+    display: none;
+  }
 }
 .banner .content_img img {
   border-radius: 400px;
@@ -2487,6 +2683,7 @@ header .container .button .btn_book:hover {
   margin-top: 28px;
   -moz-column-gap: 6px;
        column-gap: 6px;
+  row-gap: 12px;
 }
 .location_list button {
   background-color: transparent;
@@ -2516,6 +2713,17 @@ header .container .button .btn_book:hover {
   margin: 0 auto;
   margin-top: 50px;
 }
+@media (max-width: 1760px) {
+  .photos_slider_wrap {
+    width: 100%;
+    padding: 0px 80px;
+  }
+}
+@media (max-width: 750px) {
+  .photos_slider_wrap {
+    padding: 0px 15px;
+  }
+}
 .photos_slider_wrap .next, .photos_slider_wrap .prev {
   top: 182px;
 }
@@ -2527,6 +2735,11 @@ header .container .button .btn_book:hover {
   width: 547px;
   height: 381px;
 }
+@media (max-width: 1760px) {
+  .photos_slider_wrap .photos_slider_element img {
+    width: 100%;
+  }
+}
 
 .advantages {
   display: flex;
@@ -2535,6 +2748,12 @@ header .container .button .btn_book:hover {
   -moz-column-gap: 20px;
        column-gap: 20px;
   margin-top: 90px;
+  row-gap: 12px;
+}
+@media (max-width: 750px) {
+  .advantages {
+    padding: 0px 15px;
+  }
 }
 .advantages a {
   color: white;
@@ -2572,6 +2791,12 @@ header .container .button .btn_book:hover {
   font-size: 30px;
   line-height: 35px;
 }
+@media (max-width: 750px) {
+  .advantages h4 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
 .advantages .left {
   width: 668px;
   height: 607px;
@@ -2583,11 +2808,32 @@ header .container .button .btn_book:hover {
   background-position-y: center, 170px;
   background-repeat: no-repeat;
 }
+@media (max-width: 750px) {
+  .advantages .left {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(184.53deg, #EFF5F8 50.27%, rgba(255, 255, 255, 0) 150.67%), url(../iimg/advantages/left.png);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 20px;
+    padding-bottom: 80px;
+  }
+}
 .advantages .right {
   width: 668px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
+}
+@media (max-width: 1372px) {
+  .advantages .right {
+    row-gap: 12px;
+  }
+}
+@media (max-width: 750px) {
+  .advantages .right {
+    width: 100%;
+  }
 }
 .advantages .right h4 {
   font-family: "Roboto";
@@ -2605,8 +2851,24 @@ header .container .button .btn_book:hover {
   border-radius: 10px;
   padding: 40px;
 }
+@media (max-width: 750px) {
+  .advantages .right .top {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 58.08%, rgba(255, 255, 255, 0) 71.71%), url(../iimg/advantages/right_top.png);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 20px;
+    padding-bottom: 80px;
+  }
+}
 .advantages .right .top li {
   width: 291px;
+}
+@media (max-width: 750px) {
+  .advantages .right .top li {
+    width: 100%;
+  }
 }
 .advantages .right .top a {
   padding: 14px 28px;
@@ -2621,6 +2883,16 @@ header .container .button .btn_book:hover {
   padding: 40px;
   overflow: hidden;
 }
+@media (max-width: 750px) {
+  .advantages .right .bottom {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 20px;
+    padding-bottom: 80px;
+  }
+}
 .advantages .right .bottom li {
   width: 291px;
 }
@@ -2630,6 +2902,11 @@ header .container .button .btn_book:hover {
 .advantages .right .bottom h4 {
   width: 309px;
 }
+@media (max-width: 750px) {
+  .advantages .right .bottom h4 {
+    width: 100%;
+  }
+}
 .advantages .right .bottom p {
   width: 309px;
   margin-top: 15px;
@@ -2638,12 +2915,23 @@ header .container .button .btn_book:hover {
   font-size: 16px;
   line-height: 135%;
 }
+@media (max-width: 750px) {
+  .advantages .right .bottom p {
+    width: 100%;
+  }
+}
 .advantages .right .bottom .image {
   width: 0px;
   height: 0px;
   position: relative;
   top: -20px;
   left: 240px;
+}
+@media (max-width: 750px) {
+  .advantages .right .bottom .image {
+    top: 100px;
+    left: 100px;
+  }
 }
 .advantages .right .bottom .image img {
   width: 400px;
@@ -2659,6 +2947,20 @@ header .container .button .btn_book:hover {
   background-size: cover;
   background-position: center;
   padding-top: 42px;
+  border-radius: 10px;
+}
+@media (max-width: 1420px) {
+  .usp_expert {
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 750px) {
+  .usp_expert {
+    height: auto;
+    padding-bottom: 50px;
+  }
 }
 .usp_expert h4 {
   width: 625px;
@@ -2668,6 +2970,14 @@ header .container .button .btn_book:hover {
   font-size: 36px;
   line-height: 42px;
 }
+@media (max-width: 750px) {
+  .usp_expert h4 {
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
 .usp_expert p {
   font-weight: 400;
   font-size: 17px;
@@ -2676,6 +2986,12 @@ header .container .button .btn_book:hover {
   width: 562px;
   margin: 0 auto;
   margin-top: 10px;
+}
+@media (max-width: 750px) {
+  .usp_expert p {
+    padding: 0px 15px;
+    width: 100%;
+  }
 }
 .usp_expert a {
   font-weight: 500;
@@ -2693,6 +3009,7 @@ header .container .button .btn_book:hover {
 }
 
 .expert_tools {
+  padding: 0px 15px;
   padding-top: 87px;
   padding-bottom: 113px;
   margin-top: 100px;
@@ -2704,6 +3021,12 @@ header .container .button .btn_book:hover {
   line-height: 52px;
   text-transform: uppercase;
 }
+@media (max-width: 750px) {
+  .expert_tools h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .expert_tools .nav {
   width: 1396px;
   margin: 0px auto;
@@ -2711,12 +3034,19 @@ header .container .button .btn_book:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 1440px) {
+  .expert_tools .nav {
+    width: 100%;
+    padding: 0px 15px;
+  }
+}
 .expert_tools .buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   -moz-column-gap: 6px;
        column-gap: 6px;
+  row-gap: 6px;
 }
 .expert_tools .buttons button {
   height: 40px;
@@ -2731,6 +3061,11 @@ header .container .button .btn_book:hover {
   font-size: 16px;
   line-height: 19px;
   transition: 0.2s;
+}
+@media (max-width: 500px) {
+  .expert_tools .buttons button {
+    width: 80px;
+  }
 }
 .expert_tools .buttons button:hover {
   border: 1px solid rgb(20, 123, 181);
@@ -2752,15 +3087,56 @@ header .container .button .btn_book:hover {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 1440px) {
+  .expert_tools .content {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+}
 .expert_tools .content img {
   width: 515px;
   height: 383px;
   border-radius: 5px;
 }
+@media (max-width: 1440px) {
+  .expert_tools .content img {
+    width: 50%;
+    margin: auto 0;
+  }
+}
+@media (max-width: 1100px) {
+  .expert_tools .content img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 900px) {
+  .expert_tools .content img {
+    width: 100%;
+  }
+}
 .expert_tools .content .text {
   margin: auto 0;
   padding-left: 57px;
   width: 720px;
+}
+@media (max-width: 1440px) {
+  .expert_tools .content .text {
+    width: 50%;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .expert_tools .content .text {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .expert_tools .content .text {
+    padding: 0;
+    padding-top: 20px;
+  }
 }
 .expert_tools .content .text h4 {
   font-weight: 500;

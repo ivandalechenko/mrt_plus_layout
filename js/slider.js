@@ -176,6 +176,26 @@ $('.photos_slider').slick({
     autoplaySpeed: 4000,
     prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
     nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
+    responsive: [{
+        breakpoint: 1100,
+        settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 750,
+        settings: {
+            arrows: false,
+            slidesToShow: 1,
+            dots: true,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }]
+
 });
 
 
