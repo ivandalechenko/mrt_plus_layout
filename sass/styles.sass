@@ -2635,11 +2635,13 @@ header
         justify-content: space-between
         row-gap: 30px
         @media(max-width: 1680px)
-            width: 98%
+            width: 100%
         &_element:last-child
+            @media(max-width: 700px)
+                display: none
             img
-                width: 97%
-                height: 260px
+                width: 100%
+                height: 279px
                 border-radius: 10px
                 object-fit: cover
 
@@ -2648,6 +2650,8 @@ header
             display: flex
             flex-wrap: wrap
             column-gap: 15px
+            justify-content: space-between
+
             @media(max-width: 1300px)
                 width: 80%
                 margin: 0px auto
@@ -2661,11 +2665,30 @@ header
             .img_and_text
                 width: 259px
                 margin: auto 0
-                img
-                    width: 100%
                 @media(max-width: 1680px)
                     width: 30%
                     object-fit: contain
+                @media(max-width: 700px)
+                    display: flex
+                    justify-content: space-between
+                    width: 100%
+                img
+                    width: 100%
+                    @media(max-width: 700px)
+                        width: 30%
+                    @media(max-width: 450px)
+                        width: 40%
+                p
+                    display: none
+                    width: 70%
+                    margin: auto
+                    text-align: left
+                    padding-left: 30px
+                    @media(max-width: 700px)
+                        display: block
+                    @media(max-width: 450px)
+                        width: 60%
+                        padding-left: 10px
 
             &_content
                 width: 521px
@@ -2677,6 +2700,15 @@ header
                     width: 65%
                 @media(max-width: 700px)
                     width: 100%
+                    padding-top: 10px
+                    position: relative
+                    top: -30px
+                    z-index: -1
+                @media(max-width: 450px)
+                    padding-top: 50px
+                    height: auto
+                    padding-bottom: 20px
+
                 .title
                     font-weight: 600
                     font-size: 18px
@@ -2687,6 +2719,8 @@ header
                 .inner
                     margin: auto
                     padding: 0px 30px
+                    @media(max-width: 450px)
+                        padding-left: 10px
                     ul
                         padding-left: 20px
                     li
