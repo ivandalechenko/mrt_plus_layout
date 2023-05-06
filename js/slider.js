@@ -207,6 +207,16 @@ $('.feedback_main_slider').slick({
     autoplaySpeed: 4000,
     prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
     nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
+    responsive: [{
+        breakpoint: 700,
+        settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            centerMode: false,
+            slidesToScroll: 1,
+        }
+    }]
 });
 
 
@@ -218,7 +228,62 @@ $('.doctors-main-slider').slick({
     autoplay: true,
     autoplaySpeed: 4000,
     prevArrow: "<img src='iimg/left_white_arrow.svg' class='prev' alt='1'>",
-    nextArrow: "<img src='iimg/right_white_arrow.svg' class='next' alt='2'>"
+    nextArrow: "<img src='iimg/right_white_arrow.svg' class='next' alt='2'>",
+    responsive: [{
+        breakpoint: 1800,
+        settings: {
+            arrows: true,
+            dots: true,
+            slidesToShow: 5,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 1650,
+        settings: {
+            arrows: true,
+            dots: true,
+            slidesToShow: 4,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 1370,
+        settings: {
+            arrows: true,
+            dots: true,
+            slidesToShow: 3,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 1140,
+        settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 3,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 950,
+        settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 720,
+        settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            centerMode: true,
+            slidesToScroll: 1,
+        }
+    }]
 });
 
 

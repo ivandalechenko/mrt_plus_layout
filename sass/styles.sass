@@ -16,7 +16,7 @@ $base_grey_color: #F5F5F5
 .container
     width: 1620px
     margin: 0 auto
-    @media (max-width: 1630px)
+    @media (max-width: 1650px)
         width: 1200px
     @media (max-width: 1220px)
         width: 100%
@@ -1573,7 +1573,7 @@ body
     background: #444444
     padding: 15px 15px
     display: none
-    @media(max-width: 1100px)
+    @media(max-width: 1120px)
         display: block
     .phone
         color: #ffffff
@@ -1646,7 +1646,7 @@ header
         flex-wrap: wrap
         justify-content: space-between
         row-gap: 20px
-        @media (max-width: 1630px)
+        @media (max-width: 1650px)
             width: 1300px
         @media (max-width: 1320px)
             width: 1200px
@@ -1700,7 +1700,7 @@ header
             border-left: 1px solid rgba(255, 255, 255, 0.5)
             border-right: 1px solid rgba(255, 255, 255, 0.5)
 
-            @media (max-width: 1150px)
+            @media (max-width: 1180px)
                 display: block
                 border: none
                 padding: 0px
@@ -1744,7 +1744,7 @@ header
         .phone
             margin: auto 0
             padding: 0px 20px
-            @media (max-width: 1100px)
+            @media (max-width: 1120px)
                 display: none
 
             .text
@@ -2274,6 +2274,7 @@ header
         @media (max-width: 750px)
             font-size: 24px
             line-height: 28px
+            padding: 20px 0px
     .nav
         width: 1396px
         margin: 0px auto
@@ -2303,7 +2304,9 @@ header
             line-height: 19px
             transition: .2s
             @media (max-width: 500px)
-                width: 80px
+                width: 70px
+                font-size: 14px
+                line-height: 16px
         button:hover
             border: 1px solid rgba(20, 123, 181, 1)
             cursor: pointer
@@ -2382,12 +2385,23 @@ header
     border-radius: 10px
     overflow: hidden
     text-align: center
+    @media (max-width: 1450px)
+        width: 98%
+    @media (max-width:1250px)
+        height: auto
+        padding-bottom: 40px
+        text-align: left
+    @media (max-width:880px)
+        text-align: center
+
     .mrt
         position: relative
         top: -40px
         left: -10px
         height: 0px
         width: 0px
+        @media (max-width: 1450px)
+            display: none
         img
             height: 400px
     h4
@@ -2398,6 +2412,18 @@ header
         line-height: 42px
         margin: 0 auto
         margin-top: 47px
+        @media (max-width:1250px)
+            margin: 0
+            margin-top: 47px
+            margin-left: 47px
+            text-align: left
+        @media (max-width:880px)
+            margin: 0 auto
+            margin-top: 200px
+            text-align: center
+        @media (max-width:600px)
+            font-size: 24px
+            line-height: 28px
     a
         font-weight: 500
         font-size: 16px
@@ -2411,14 +2437,33 @@ header
         margin: 0 auto
         margin-top: 28px
         border: 2px solid white
+        @media (max-width:1250px)
+            margin: 0
+            margin-top: 28px
+            margin-left: 47px
+            width: auto
+            padding: 13px 30px
+        @media (max-width:880px)
+            margin: 0
+            margin-top: 28px
+
     .right
         position: relative
-        left: 1010px
+        left: 75%
         height: 0px
         width: 0px
+        @media (max-width:1250px)
+            float: right
+            position: relative
+            left: -360px
+        @media (max-width:880px)
+            left: -240px
         img
             height: 260px
             border-radius: 180px 0px 0px 180px
+            @media (max-width:880px)
+                height: 184px
+
     a:hover
         color: white
         background-color: transparent
@@ -2427,6 +2472,8 @@ header
     margin: 0 auto
     margin-top: 100px
     width: 1396px
+    @media(max-width: 1440px)
+        width: 98%
     .header
         width: 100%
         h3
@@ -2447,6 +2494,9 @@ header
         margin-top: 50px
         .stars
             width: 300px
+            @media(max-width: 1550px)
+                margin: 0 auto
+
             .num
                 font-weight: 600
                 font-size: 60px
@@ -2477,6 +2527,14 @@ header
         .feedback_main_slider
             width: 828px
             margin: auto 0
+
+            @media(max-width: 1550px)
+                width: 80%
+                margin: 0 auto
+                margin-top: 50px
+            @media(max-width: 600px)
+                width: 95%
+
             .prev, .next
                 top: 45%
             .next
@@ -2489,6 +2547,9 @@ header
                 padding: 80px 70px
                 background-color: rgba(245, 245, 245, 1)
                 border-radius: 10px
+                @media(max-width: 450px)
+                    padding: 40px 20px
+
                 .name
                     font-weight: 600
                     font-size: 18px
@@ -2511,6 +2572,11 @@ header
     margin-top: 90px
     background-color: rgba(239, 245, 248, 1)
     padding: 67px 120px 105px
+    @media(max-width: 1140px)
+        padding: 30px 30px 60px
+    @media(max-width: 490px)
+        padding: 30px 0px 30px
+
     h4
         font-weight: 400
         font-size: 44px
@@ -2531,6 +2597,10 @@ header
     .doctors-slider__element
         width: 246px
         background-color: white
+        @media(max-width: 700px)
+            width: 80%
+        @media(max-width: 490px)
+            width: 100%
     .rank
         font-weight: 400
         font-size: 14px
@@ -2541,8 +2611,14 @@ header
         background-color: rgba(245, 245, 245, 1)
         font-weight: 500
         font-size: 14px
-
+        @media(max-width: 490px)
+            margin: 0px 20px
+            margin-top: 10px
+    .doctor_bill
+        @media(max-width: 490px)
+            padding: 10px
 .whywe_main
+    padding: 0px 10px
     padding-top: 90px
     h4
         font-weight: 400
@@ -2558,32 +2634,56 @@ header
         flex-wrap: wrap
         justify-content: space-between
         row-gap: 30px
+        @media(max-width: 1680px)
+            width: 98%
         &_element:last-child
             img
-                width: 100%
+                width: 97%
+                height: 260px
                 border-radius: 10px
+                object-fit: cover
+
         &_element
             width: 49%
             display: flex
             flex-wrap: wrap
             column-gap: 15px
+            @media(max-width: 1300px)
+                width: 80%
+                margin: 0px auto
+            @media(max-width: 1100px)
+                width: 100%
+                justify-content: center
             .green
                 background-color: rgba(235, 244, 244, 1)
             .blue
                 background-color: rgba(239, 245, 248, 1)
-            img
+            .img_and_text
                 width: 259px
-                height: 274px
+                margin: auto 0
+                img
+                    width: 100%
+                @media(max-width: 1680px)
+                    width: 30%
+                    object-fit: contain
+
             &_content
                 width: 521px
-                height: 274px
+                height: 260px
                 border-radius: 10px
                 display: flex
+                margin: auto 0
+                @media(max-width: 1680px)
+                    width: 65%
+                @media(max-width: 700px)
+                    width: 100%
                 .title
                     font-weight: 600
                     font-size: 18px
                     line-height: 150%
                     text-transform: uppercase
+                    @media(max-width: 700px)
+                        display: none
                 .inner
                     margin: auto
                     padding: 0px 30px
