@@ -95,7 +95,6 @@ body
     font-style: normal
     font-weight: 400
     color: $base_black_color
-    padding-bottom: 200px
 .row
     display: flex
     flex-wrap: wrap
@@ -2446,17 +2445,22 @@ footer
     background-color: rgba(68, 68, 68, 1)
     display: flex
     flex-wrap: wrap
+    margin-top: 100px
     .left_col
         padding-top: 65px
-        width: 77%
+        padding-bottom: 50px
+        width: 76%
         .left_col_inner
-            width: 1322px
+            width: 1300px
             color: white
             margin-left: auto
+            padding-right: 80px
             .first_row
                 width: 100%
                 display: flex
                 flex-wrap: wrap
+                padding-bottom: 40px
+                border-bottom: 1px solid rgba(84, 83, 83, 1)
                 .first_col, .second_col, .third_col, .fourth_col
                     h4
                         color: white
@@ -2481,9 +2485,14 @@ footer
                             color: #A6A6A6
                 .first_col
                     width: 34%
+                .second_col
+                    width: 18%
+                .third_col
+                    width: 26%
+                .fourth_col
+                    width: 22%
 
                 .second_col, .third_col, .fourth_col
-                    width: 22%
                     a
                         display: block
                         padding-bottom: 5px
@@ -2493,10 +2502,106 @@ footer
                         color: #A6A6A6
                     a:hover
                         opacity: .7
+            .second_row
+                padding: 14px 0px
+                display: flex
+                flex-wrap: wrap
+                border-bottom: 1px solid rgba(84, 83, 83, 1)
+
+                .links
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    margin: auto 0
+                    display: flex
+                    flex-wrap: wrap
+                    column-gap: 30px
+                    padding-right: 40px
+
+                    a
+                        color: white
+                    a:hover
+                        opacity: .7
+                .payments
+                    padding: 12px 40px
+                    border-right: 1px solid rgba(84, 83, 83, 1)
+                    border-left: 1px solid rgba(84, 83, 83, 1)
+                    img
+                        border-radius: 3px
+                .sec
+                    margin: auto 0
+                    display: flex
+                    flex-wrap: wrap
+                    column-gap: 30px
+                    padding-left: 40px
+                    a
+                        width: 150px
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 16px
+                        text-decoration-line: underline
+                        color: #A6A6A6
+                    a:hover
+                        text-decoration-line: none
+                        opacity: .7
+            .third_row
+                display: flex
+                flex-wrap: wrap
+                padding-top: 30px
+                .logo
+                    width: 16%
+                .text
+                    width: 84%
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 16px
+                        color: #A6A6A6
+                        padding-top: 15px
+                    p:first-child
+                        padding-top: 0px
+                        color: #FFFFFF
+
     .right_col
         padding-top: 65px
-        width: 23%
+        width: 24%
         background-color: rgba(4, 162, 162, 1)
         .right_col_inner
-            width: 298px
+            width: 320px
             color: white
+            text-align: right
+            padding-left: 40px
+            h4
+                font-weight: 600
+                font-size: 17px
+                line-height: 20px
+                color: white
+            p
+                padding-top: 10px
+                padding-bottom: 24px
+                font-weight: 400
+                font-size: 14px
+                line-height: 130%
+                color: white
+                a
+                    color: white
+                    text-decoration: underline
+                a:hover
+                    opacity: .7
+                    text-decoration: none
+            .pol
+                font-weight: 400
+                font-size: 14px
+                line-height: 14px
+                text-align: right
+                text-decoration-line: underline
+                padding-top: 24px
+                color: #90E9E9
+                display: inline-block
+            .pol:hover
+                text-decoration: none
+                opacity: .7
+            .soc
+                padding-top: 25px
+                a:hover
+                    opacity: .7
