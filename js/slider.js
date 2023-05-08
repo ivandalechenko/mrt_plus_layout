@@ -380,6 +380,44 @@ jQuery(function ($) {
 });
 
 
+$('.services_navigation_element').on('click', function () {
+    var $set = $('#services_navigation .services_navigation_element');
+    var n = $set.index(this);
+    var elements = $('#services .services_element');
+    elements.addClass('dnone');
+    elements.eq(n).removeClass("dnone");
+    var buttons = $('#services_navigation .services_navigation_element');
+    buttons.removeClass("active");
+    buttons.eq(n).addClass("active");
+});
+
+
+$('.city_photos_navigation_element').on('click', function () {
+    var $set = $('#city_photos_navigation .city_photos_navigation_element');
+    var n = $set.index(this);
+    var elements = $('#city_photos .city_photos_element');
+    elements.addClass('dnone');
+    elements.eq(n).removeClass("dnone");
+    var buttons = $('#city_photos_navigation .city_photos_navigation_element');
+    buttons.removeClass("active");
+    buttons.eq(n).addClass("active");
+});
+
+$('.tools_navigation_element').on('click', function () {
+    var $set = $('#tools_navigation .tools_navigation_element');
+    var n = $set.index(this);
+    var elements = $('#tools .tools_element');
+    elements.addClass('dnone');
+    elements.eq(n).removeClass("dnone");
+    var buttons = $('#tools_navigation .tools_navigation_element');
+    buttons.removeClass("active");
+    buttons.eq(n).addClass("active");
+});
+
+
+
+
+
 
 
 $('.helpful-information .helpful-information_element .helpful-information_element_img img').click(function () {

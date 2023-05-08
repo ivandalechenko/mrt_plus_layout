@@ -1568,18 +1568,33 @@ body
             display: block
 
 // for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+// for index.html below
+
 #mobile_menu
     transition: .4s ease-out
     background-color: #444444
     color: white
-    position: absolute
+    position: fixed
     top: 0px
     left: 0px
     z-index: 10
     width: 100%
     padding-right: 25px
     padding-top: 25px
-
+    height: 100vh
+    overflow: auto
     #mobile_menu_cross
         position: absolute
         top: 40px
@@ -1641,10 +1656,10 @@ body
 
         display: block
         height: 26px
-        width: 32px
+        width: 30px
         position: absolute
         top: 15px
-        right: 94px
+        right: 86px
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -2102,13 +2117,13 @@ header
     @media (max-width: 700px)
         margin-top: 41px
 
-.services_navigation
+#services_navigation
     display: flex
     flex-wrap: wrap
     justify-content: center
     column-gap: 6px
     margin-top: 38px
-    &_element
+    .services_navigation_element
         width: 187px
         padding: 20px 0px
         font-family: 'Roboto'
@@ -2120,7 +2135,7 @@ header
         text-align: center
         border-radius: 10px 10px 0px 0px
         transition: .2s
-    &_element:hover
+    .services_navigation_element:hover
         cursor: pointer
         opacity: .7
 
@@ -2128,18 +2143,28 @@ header
         color: white
         background-color: rgba(20, 123, 181, 1)
 
-.services
+#services
     .info
         background-color: rgba(245, 245, 245, 1)
         padding: 70px
         width: 1400px
         margin: 0 auto
         border-radius: 10px
+        @media(max-width: 1450px)
+            width: 96%
+        @media(max-width: 700px)
+            padding: 20px
         .spec
             display: flex
             flex-wrap: wrap
+            column-gap: 15px
             ul
                 width: 33%
+                @media(max-width: 1100px)
+                    width: 48%
+                @media(max-width: 500px)
+                    width: 100%
+
             li
                 list-style-image: url(../img/circle.svg)
                 list-style-position: inside
@@ -2153,8 +2178,15 @@ header
             display: flex
             flex-wrap: wrap
             row-gap: 60px
+            column-gap: 15px
+            @media(max-width: 1450px)
+                justify-content: space-between
             &_element
                 width: 40%
+                @media(max-width: 1450px)
+                    width: 48%
+                @media(max-width: 500px)
+                    width: 100%
                 h4
                     a
                         font-family: 'Roboto'
@@ -2179,8 +2211,6 @@ header
                         color: #444444
                     a:hover
                         color: rgba(20, 123, 181, 1)
-.dnone
-    display: none
 
 .location_list
     display: flex
@@ -2509,8 +2539,7 @@ header
         margin: 0 auto
         margin-top: 37px
         padding: 36px 31px
-        display: flex
-        flex-wrap: wrap
+
         @media (max-width: 1440px)
             width: 100%
             padding: 15px
@@ -2518,6 +2547,9 @@ header
         @media (max-width: 750px)
             margin-top: 25px
 
+        .tools_element
+            display: flex
+            flex-wrap: wrap
         img
             width: 515px
             height: 383px
@@ -2575,7 +2607,7 @@ header
     overflow: hidden
     text-align: center
     @media (max-width: 1450px)
-        width: 98%
+        width: 96%
     @media (max-width:1250px)
         height: auto
         padding-bottom: 40px
@@ -2669,7 +2701,11 @@ header
         margin-top: 50px
 
     .header
-        width: 300px
+        width: 500px
+        margin: auto
+        @media(max-width: 750px)
+            width: 300px
+
         h3
             font-weight: 400
             font-size: 44px
@@ -2681,7 +2717,7 @@ header
                 line-height: 28px
                 text-transform: none
                 text-align: left
-                padding-left: 15px
+                padding-left: 0px
                 span
                     display: none
 
@@ -2698,15 +2734,18 @@ header
         .stars
             width: 300px
             @media(max-width: 1550px)
+                margin-left: 50px
+            @media(max-width: 1300px)
+                margin-left: 10px
+            @media(max-width: 1200px)
                 margin: 0 auto
-
             .num
                 font-weight: 600
                 font-size: 60px
                 line-height: 70px
                 margin-bottom: 30px
                 @media(max-width: 750px)
-                    padding-left: 15px
+                    padding-left: 0px
                     margin-bottom: 10px
                     font-size: 40px
                     line-height: 47px
@@ -2744,11 +2783,12 @@ header
         .feedback_main_slider
             width: 828px
             margin: auto 0
-
             @media(max-width: 1550px)
-                width: 80%
+                width: 60%
                 margin: 0 auto
-                margin-top: 50px
+            @media(max-width: 1200px)
+                width: 80%
+                margin-top: 30px
             @media(max-width: 600px)
                 width: 95%
 
@@ -2800,9 +2840,15 @@ header
         line-height: 52px
         text-align: center
         text-transform: uppercase
+        @media(max-width: 700px)
+            font-weight: 400
+            font-size: 24px
+            line-height: 28px
 
 .doctors-main-slider
     margin-top: 60px
+    @media(max-width: 700px)
+        margin-top: 35px
     .prev, .next
         top: 45%
     .next
@@ -2837,6 +2883,9 @@ header
 .whywe_main
     padding: 0px 10px
     padding-top: 90px
+    @media(max-width: 700px)
+
+        padding-top: 50px
     h4
         font-weight: 400
         font-size: 44px
@@ -2856,6 +2905,9 @@ header
         row-gap: 30px
         @media(max-width: 1680px)
             width: 100%
+        @media(max-width: 700px)
+            row-gap: 0px
+
         &_element:last-child
             @media(max-width: 700px)
                 display: none
@@ -2963,7 +3015,11 @@ header
         line-height: 52px
         text-align: center
         text-transform: uppercase
-
+        @media(max-width: 700px)
+            margin-top: 30px
+            font-weight: 400
+            font-size: 24px
+            line-height: 28px
     img
         border: 1px solid rgba(217, 217, 217, 1)
         width: 100%
@@ -2971,22 +3027,40 @@ header
         padding: 0px 20px
     .license_main_slider
         padding-top: 44px
+        @media(max-width: 700px)
+            padding-top: 20px
 
 .map_main
     margin: 0 auto
     width: 1620px
     margin-top: 100px
+    padding: 15px
     @media (max-width: 1650px)
         width: 100%
+    @media (max-width: 700px)
+        margin-top: 70px
+        padding: 0px
+
     .nav
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        @media (max-width: 700px)
+            justify-content: center
+
         .text
             font-weight: 400
             font-size: 44px
             line-height: 52px
             text-transform: uppercase
+
+            @media (max-width: 700px)
+                font-weight: 400
+                font-size: 24px
+                line-height: 28px
+        .top_link
+            @media (max-width: 700px)
+                display: none
         .link
             margin: auto 0
             a
@@ -3003,16 +3077,18 @@ header
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        row-gap: 20px
         .text
             background-color: rgba(245, 245, 245, 1)
             width: 20%
             padding: 20px 30px
             border-radius: 10px
 
-            @media (max-width: 1200px)
+            @media (max-width: 1400px)
                 width: 40%
             @media (max-width: 700px)
-                width: 100%
+                width: 96%
+                margin: 0 auto
             .text_element
                 padding: 20px 0px
             .text_element:not(:last-child)
@@ -3033,10 +3109,15 @@ header
                 line-height: 19px
         .map
             width: 78%
-            @media (max-width: 1200px)
+            border-radius: 10px
+            overflow: hidden
+            @media (max-width: 1400px)
                 width: 58%
             @media (max-width: 700px)
                 width: 100%
+                border-radius: 0
+                height: 500px
+
             img
                 border-radius: 10px
                 width: 100%
@@ -3205,3 +3286,6 @@ footer
                 padding-top: 25px
                 a:hover
                     opacity: .7
+
+.dnone
+    display: none !important
