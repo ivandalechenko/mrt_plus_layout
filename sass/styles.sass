@@ -1635,6 +1635,43 @@ body
                 transform-origin: 0% 100%
                 transition: transform 0.4s ease-in-out
 
+#cookie
+    position: absolute
+    padding: 30px
+    width: 350px
+    right: 20px
+    top: 150px
+    z-index: 3
+    background: #FFFFFF
+    box-shadow: 0px 4px 15px rgba(170, 208, 228, 0.76)
+    border-radius: 6px
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    line-height: 20px
+    a
+        color: #444444
+        text-decoration: underline
+    a:hover
+        opacity: 0.7
+    button
+        display: block
+        margin-top: 20px
+        padding: 8px 40px
+        background-color: transparent
+        border: 1px solid #04A2A2
+        color: #04A2A2
+        font-weight: 400
+        font-size: 17px
+        line-height: 20px
+        border-radius: 50px
+        transition: .2s
+    button:hover
+        color: white
+        background-color: #04A2A2
+        cursor: pointer
+
 header
     padding: 15px 0px
     background: linear-gradient(89.9deg, #147BB5 0%, #04A2A2 100%)
@@ -1672,10 +1709,60 @@ header
                 width: 100%
                 text-align: center
             .location
+                .locations
+                    transition: 0.2s ease-in-out
+                    position: relative
+                    z-index: 2
+                    width: 0px
+                    height: 0px
+                    opacity: 0
+                    @media (max-width: 900px)
+                        width: 100%
+                    .locations_inner
+                        overflow: hidden
+                        margin-top: 10px
+                        border-radius: 10px
+                        box-shadow: 0px 0px 10px gray
+                        background-color: white
+                        height: 0px
+                        width: 500px
+                        @media (max-width: 900px)
+                            margin: 0 auto
+                            margin-top: 10px
+                        @media (max-width: 550px)
+                            width: 95%
+                    a
+                        display: block
+                        padding: 14px 20px 14px
+                    a:first-child
+                        padding: 20px 20px 14px
+                        border-radius: 10px 10px 0px 0px
+                    a:last-child
+                        padding: 14px 20px 20px
+                        border-radius: 0px 0px 10px 10px
+
+                    a:hover
+                        color: white
+                        background-color: #0070AF
+
+                .visible_opacity
+                    opacity: 1
+                    .locations_inner
+                        height: auto
+
                 button
                     margin-top: 5px
                     background-color: transparent
                     transition: .2s
+                    display: flex
+                    column-gap: 5px
+                    @media (max-width: 900px)
+                        margin: 0 auto
+                        margin-top: 5px
+                    img:first-child
+                        opacity: .6
+                    img
+                        margin: auto 0
                     .text
                         color: white
                         font-family: 'Roboto'
@@ -1801,7 +1888,7 @@ header
             margin: auto
         button
             position: relative
-            background-image: url(../iimg/search.svg)
+            background-image: url(../img/search.svg)
             background-color: transparent
             width: 18px
             height: 18px
@@ -1840,96 +1927,149 @@ header
         a:hover
             opacity: .7
 
-.banner
-    background-image: url(../iimg/banner_background.png), linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%)
-    background-position: right
-    border-radius: 10px
-    background-size: contain
-    background-repeat: no-repeat
-    overflow: hidden
-    margin-top: 46px
-    @media(max-width: 1150px)
-        background-image: linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%)
-    @media(max-width: 800px)
+.banner_block
+    @media(max-width: 1000px)
         display: none
-    h2
-        font-family: 'Roboto'
-        font-style: normal
-        font-weight: 500
-        font-size: 40px
-        line-height: 47px
-        text-transform: uppercase
-        background-color: rgba(20, 123, 181, 1)
-        padding: 14px 31px 14px 63px
-        border-radius: 00px 10px 10px 0px
-        color: white
-        margin-top: 44px
-        display: inline-block
-    p
-        padding: 13px 31px
-        margin-top: 15px
-        font-family: 'Roboto'
-        font-style: normal
-        font-weight: 500
-        font-size: 30px
-        line-height: 35px
-        background-color: white
-        border-radius: 10px
-        display: inline-block
-    .be_careful
-        font-family: 'Roboto'
-        font-style: normal
-        font-weight: 400
-        font-size: 13px
-        line-height: 15px
-        margin-top: 49px
-    a
-        margin-top: 28px
-        font-family: 'Roboto'
-        font-style: normal
-        font-weight: 400
-        font-size: 16px
-        line-height: 19px
-        padding: 14px 58px
-        background: #04A2A2
-        border-radius: 50px
-        color: white
-        border: 2px solid #04A2A2
-        display: inline-block
-    a:hover
-        color: #04A2A2
-        background: transparent
-    .info
-        width: 700px
-        padding-left: 68px
-        padding-bottom: 20px
-    .banner_decor_element
-        position: relative
-        width: 0px
-        height: 0px
-        top: -220px
-        right: -786px
-        @media(max-width: 1150px)
-            display: none
-    .content_img
-        position: relative
-        float: right
-        right: 451px
-        top: -123px
-        width: 0px
-        height: 0px
+    .container
+        @media (max-width: 1800px)
+            width: 88%
+    .next, .prev
+        top: 47%
 
-        @media(max-width: 1150px)
-            display: none
-        img
-            border-radius: 400px
-            border: 10px solid white
-            width: 481px
-            height: 481px
+        height: 70px
+        width: 70px
+    .next
+        right: -35px
+    .prev
+        left: -35px
+    .banner_wrapper
+        height: 440px
+        display: flex
+    .banner
+        background-image: url(../img/banner_background.png), linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%)
+        background-position: right
+        border-radius: 10px
+        background-size: contain
+        background-repeat: no-repeat
+        overflow: hidden
+        margin-top: 46px
+        height: 440px
+        h2
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 500
+            font-size: 40px
+            line-height: 47px
+            text-transform: uppercase
+            background-color: rgba(20, 123, 181, 1)
+            padding: 14px 31px 14px 63px
+            border-radius: 00px 10px 10px 0px
+            color: white
+            display: inline-block
+            margin-left: -68px
+            max-width: 48%
+            @media (max-width: 1650px)
+                max-width: 60%
+        .text
+            padding: 13px 31px
+            margin-top: 15px
+            font-style: normal
+            font-weight: 500
+            font-size: 30px
+            line-height: 35px
+            background-color: white
+            border-radius: 10px
+            display: inline-block
+            max-width: 80%
+            display: table
+            max-width: 62%
+            .book
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 21px
+                margin: 0px -31px
+                background: #B3D5D8
+                margin-bottom: -13px
+                border-radius: 0px 0px 10px 10px
+                padding: 13px 31px
+                margin-top: 22px
+                font-weight: 600
+                font-size: 18px
+                line-height: 21px
+            .exp
+                margin-top: 11px
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 21px
+        .be_careful
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 13px
+            line-height: 15px
+            margin-top: 49px
+
+        a
+            margin-top: 28px
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            padding: 14px 58px
+            background: #04A2A2
+            border-radius: 50px
+            color: white
+            border: 2px solid #04A2A2
+            display: inline-block
+        a:hover
+            color: #04A2A2
+            background: transparent
+        .info
+            width: 100%
+            padding-left: 68px
+            margin: auto 0
+        .banner_decor_element
+            position: relative
+            width: 0px
+            height: 0px
+            right: -786px
+            top: 220px
+            @media(max-width: 1650px)
+                top: 241px
+                right: -509px
+            @media(max-width: 1150px)
+                display: none
+        .content_img
+            position: relative
+            float: right
+            right: 451px
+            top: -118px
+            width: 0px
+            height: 0px
+            @media(max-width: 1250px)
+                right: 275px
+                top: -30px
+
+            @media(max-width: 1000px)
+                display: none
+            img
+                border-radius: 400px
+                border: 10px solid white
+                width: 481px
+                height: 481px
+                @media(max-width: 1250px)
+                    width: 300px
+                    height: 300px
+
 .mt62
     margin-top: 62px
 .mt84
     margin-top: 84px
+    @media (max-width: 700px)
+        margin-top: 41px
 
 .services_navigation
     display: flex
@@ -2029,6 +2169,10 @@ header
         font-size: 16px
         line-height: 19px
         transition: .2s
+        @media (max-width: 700px)
+            font-size: 14px
+            line-height: 16px
+
     button:hover
         border: 1px solid rgba(20, 123, 181, 1)
         cursor: pointer
@@ -2047,7 +2191,8 @@ header
         padding: 0px 80px
     @media(max-width: 750px)
         padding: 0px 15px
-
+    @media (max-width: 700px)
+        margin-top: 27px
     .next, .prev
         top: 182px
     .photos_slider_element
@@ -2105,7 +2250,7 @@ header
     .left
         width: 668px
         height: 607px
-        background: linear-gradient(184.53deg, #EFF5F8 41.27%, rgba(255, 255, 255, 0) 103.67%), url(../iimg/advantages/left.png)
+        background: linear-gradient(184.53deg, #EFF5F8 41.27%, rgba(255, 255, 255, 0) 103.67%), url(../img/advantages/left.png)
         background-position: center
         background-size: cover
         border-radius: 10px
@@ -2115,7 +2260,7 @@ header
         @media(max-width: 750px)
             width: 100%
             height: auto
-            background: linear-gradient(184.53deg, #EFF5F8 50.27%, rgba(255, 255, 255, 0) 150.67%), url(../iimg/advantages/left.png)
+            background: linear-gradient(184.53deg, #EFF5F8 50.27%, rgba(255, 255, 255, 0) 150.67%), url(../img/advantages/left.png)
             background-position: center
             background-size: cover
             padding: 30px 20px
@@ -2139,7 +2284,7 @@ header
         .top
             width: 688px
             height: 293px
-            background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 38.08%, rgba(255, 255, 255, 0) 71.71%), url(../iimg/advantages/right_top.png)
+            background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 38.08%, rgba(255, 255, 255, 0) 71.71%), url(../img/advantages/right_top.png)
             background-position: center
             background-size: cover
             border-radius: 10px
@@ -2147,7 +2292,7 @@ header
             @media(max-width: 750px)
                 width: 100%
                 height: auto
-                background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 58.08%, rgba(255, 255, 255, 0) 71.71%), url(../iimg/advantages/right_top.png)
+                background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 58.08%, rgba(255, 255, 255, 0) 71.71%), url(../img/advantages/right_top.png)
                 background-position: center
                 background-size: cover
                 padding: 30px 20px
@@ -2211,7 +2356,7 @@ header
     width: 1396px
     height: 291px
     text-align: center
-    background-image: url(../iimg/usp_expert.png)
+    background-image: url(../img/usp_expert.png)
     background-size: cover
     background-position: center
     padding-top: 42px
@@ -2233,6 +2378,7 @@ header
         line-height: 42px
         @media(max-width: 750px)
             width: 100%
+            font-weight: 500
             padding: 0px 15px
             font-size: 26px
             line-height: 30px
@@ -2266,6 +2412,11 @@ header
     padding-bottom: 113px
     margin-top: 100px
     background-color: rgba(239, 245, 248, 1)
+    @media (max-width: 750px)
+        padding-top: 50px
+        margin-top: 50px
+        padding-bottom: 55px
+
     h3
         font-weight: 400
         font-size: 44px
@@ -2274,13 +2425,16 @@ header
         @media (max-width: 750px)
             font-size: 24px
             line-height: 28px
-            padding: 20px 0px
+            padding: 0px
+            text-align: center
+            width: 100%
     .nav
         width: 1396px
         margin: 0px auto
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        row-gap: 30px
         @media (max-width: 1440px)
             width: 100%
             padding: 0px 15px
@@ -2290,6 +2444,8 @@ header
         justify-content: center
         column-gap: 6px
         row-gap: 6px
+        @media (max-width: 750px)
+            width: 100%
         button
             height: 40px
             width: 120px
@@ -2328,6 +2484,8 @@ header
             width: 100%
             padding: 15px
             height: auto
+        @media (max-width: 750px)
+            margin-top: 25px
 
         img
             width: 515px
@@ -2393,6 +2551,8 @@ header
         text-align: left
     @media (max-width:880px)
         text-align: center
+    @media (max-width:750px)
+        margin-top: 50px
 
     .mrt
         position: relative
@@ -2474,14 +2634,26 @@ header
     width: 1396px
     @media(max-width: 1440px)
         width: 98%
+    @media(max-width: 750px)
+        margin-top: 50px
+
     .header
-        width: 100%
+        width: 300px
         h3
             font-weight: 400
             font-size: 44px
             line-height: 52px
             text-align: center
             text-transform: uppercase
+            @media(max-width: 750px)
+                font-size: 24px
+                line-height: 28px
+                text-transform: none
+                text-align: left
+                padding-left: 15px
+                span
+                    display: none
+
             a
                 color: #444444
                 text-decoration: underline
@@ -2502,6 +2674,20 @@ header
                 font-size: 60px
                 line-height: 70px
                 margin-bottom: 30px
+                @media(max-width: 750px)
+                    padding-left: 15px
+                    margin-bottom: 10px
+                    font-size: 40px
+                    line-height: 47px
+                    img
+                        height: 24px
+                .visible_mob
+                    display: none
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 135%
+                    @media(max-width: 750px)
+                        display: block
             .percent
                 font-weight: 400
                 font-size: 17px
@@ -2626,6 +2812,9 @@ header
         line-height: 52px
         text-align: center
         text-transform: uppercase
+        @media(max-width: 700px)
+            font-size: 24px
+            line-height: 28px
     &_flex
         width: 1623px
         margin: 0 auto
@@ -2734,6 +2923,8 @@ header
 .license_main
     width: 1200px
     margin: 0 auto
+    @media(max-width: 1250px)
+        width: 100%
     h4
         margin-top: 90px
         font-weight: 400
@@ -2754,6 +2945,8 @@ header
     margin: 0 auto
     width: 1620px
     margin-top: 100px
+    @media (max-width: 1650px)
+        width: 100%
     .nav
         display: flex
         flex-wrap: wrap
@@ -2784,6 +2977,11 @@ header
             width: 20%
             padding: 20px 30px
             border-radius: 10px
+
+            @media (max-width: 1200px)
+                width: 40%
+            @media (max-width: 700px)
+                width: 100%
             .text_element
                 padding: 20px 0px
             .text_element:not(:last-child)
@@ -2804,6 +3002,10 @@ header
                 line-height: 19px
         .map
             width: 78%
+            @media (max-width: 1200px)
+                width: 58%
+            @media (max-width: 700px)
+                width: 100%
             img
                 border-radius: 10px
                 width: 100%

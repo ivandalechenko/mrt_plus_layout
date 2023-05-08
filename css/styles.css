@@ -2192,6 +2192,48 @@ body {
   transition: transform 0.4s ease-in-out;
 }
 
+#cookie {
+  position: absolute;
+  padding: 30px;
+  width: 350px;
+  right: 20px;
+  top: 150px;
+  z-index: 3;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(170, 208, 228, 0.76);
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+#cookie a {
+  color: #444444;
+  text-decoration: underline;
+}
+#cookie a:hover {
+  opacity: 0.7;
+}
+#cookie button {
+  display: block;
+  margin-top: 20px;
+  padding: 8px 40px;
+  background-color: transparent;
+  border: 1px solid #04A2A2;
+  color: #04A2A2;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+#cookie button:hover {
+  color: white;
+  background-color: #04A2A2;
+  cursor: pointer;
+}
+
 header {
   padding: 15px 0px;
   background: linear-gradient(89.9deg, #147BB5 0%, #04A2A2 100%);
@@ -2246,10 +2288,80 @@ header .container .adress {
     text-align: center;
   }
 }
+header .container .adress .location .locations {
+  transition: 0.2s ease-in-out;
+  position: relative;
+  z-index: 2;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+@media (max-width: 900px) {
+  header .container .adress .location .locations {
+    width: 100%;
+  }
+}
+header .container .adress .location .locations .locations_inner {
+  overflow: hidden;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  background-color: white;
+  height: 0px;
+  width: 500px;
+}
+@media (max-width: 900px) {
+  header .container .adress .location .locations .locations_inner {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 550px) {
+  header .container .adress .location .locations .locations_inner {
+    width: 95%;
+  }
+}
+header .container .adress .location .locations a {
+  display: block;
+  padding: 14px 20px 14px;
+}
+header .container .adress .location .locations a:first-child {
+  padding: 20px 20px 14px;
+  border-radius: 10px 10px 0px 0px;
+}
+header .container .adress .location .locations a:last-child {
+  padding: 14px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+header .container .adress .location .locations a:hover {
+  color: white;
+  background-color: #0070AF;
+}
+header .container .adress .location .visible_opacity {
+  opacity: 1;
+}
+header .container .adress .location .visible_opacity .locations_inner {
+  height: auto;
+}
 header .container .adress .location button {
   margin-top: 5px;
   background-color: transparent;
   transition: 0.2s;
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+@media (max-width: 900px) {
+  header .container .adress .location button {
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+header .container .adress .location button img:first-child {
+  opacity: 0.6;
+}
+header .container .adress .location button img {
+  margin: auto 0;
 }
 header .container .adress .location button .text {
   color: white;
@@ -2411,7 +2523,7 @@ header .container .button .btn_book:hover {
 }
 .links_and_search .search button {
   position: relative;
-  background-image: url(../iimg/search.svg);
+  background-image: url(../img/search.svg);
   background-color: transparent;
   width: 18px;
   height: 18px;
@@ -2465,26 +2577,42 @@ header .container .button .btn_book:hover {
   opacity: 0.7;
 }
 
-.banner {
-  background-image: url(../iimg/banner_background.png), linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%);
+@media (max-width: 1000px) {
+  .banner_block {
+    display: none;
+  }
+}
+@media (max-width: 1800px) {
+  .banner_block .container {
+    width: 88%;
+  }
+}
+.banner_block .next, .banner_block .prev {
+  top: 47%;
+  height: 70px;
+  width: 70px;
+}
+.banner_block .next {
+  right: -35px;
+}
+.banner_block .prev {
+  left: -35px;
+}
+.banner_block .banner_wrapper {
+  height: 440px;
+  display: flex;
+}
+.banner_block .banner {
+  background-image: url(../img/banner_background.png), linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%);
   background-position: right;
   border-radius: 10px;
   background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
   margin-top: 46px;
+  height: 440px;
 }
-@media (max-width: 1150px) {
-  .banner {
-    background-image: linear-gradient(261.63deg, #EFF5F8 43.59%, #D2EAEA 99.47%);
-  }
-}
-@media (max-width: 800px) {
-  .banner {
-    display: none;
-  }
-}
-.banner h2 {
+.banner_block .banner h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -2495,13 +2623,18 @@ header .container .button .btn_book:hover {
   padding: 14px 31px 14px 63px;
   border-radius: 0px 10px 10px 0px;
   color: white;
-  margin-top: 44px;
   display: inline-block;
+  margin-left: -68px;
+  max-width: 48%;
 }
-.banner p {
+@media (max-width: 1650px) {
+  .banner_block .banner h2 {
+    max-width: 60%;
+  }
+}
+.banner_block .banner .text {
   padding: 13px 31px;
   margin-top: 15px;
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -2509,8 +2642,33 @@ header .container .button .btn_book:hover {
   background-color: white;
   border-radius: 10px;
   display: inline-block;
+  max-width: 80%;
+  display: table;
+  max-width: 62%;
 }
-.banner .be_careful {
+.banner_block .banner .text .book {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0px -31px;
+  background: #B3D5D8;
+  margin-bottom: -13px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 13px 31px;
+  margin-top: 22px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+.banner_block .banner .text .exp {
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.banner_block .banner .be_careful {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -2518,7 +2676,7 @@ header .container .button .btn_book:hover {
   line-height: 15px;
   margin-top: 49px;
 }
-.banner a {
+.banner_block .banner a {
   margin-top: 28px;
   font-family: "Roboto";
   font-style: normal;
@@ -2532,45 +2690,63 @@ header .container .button .btn_book:hover {
   border: 2px solid #04A2A2;
   display: inline-block;
 }
-.banner a:hover {
+.banner_block .banner a:hover {
   color: #04A2A2;
   background: transparent;
 }
-.banner .info {
-  width: 700px;
+.banner_block .banner .info {
+  width: 100%;
   padding-left: 68px;
-  padding-bottom: 20px;
+  margin: auto 0;
 }
-.banner .banner_decor_element {
+.banner_block .banner .banner_decor_element {
   position: relative;
   width: 0px;
   height: 0px;
-  top: -220px;
   right: -786px;
+  top: 220px;
+}
+@media (max-width: 1650px) {
+  .banner_block .banner .banner_decor_element {
+    top: 241px;
+    right: -509px;
+  }
 }
 @media (max-width: 1150px) {
-  .banner .banner_decor_element {
+  .banner_block .banner .banner_decor_element {
     display: none;
   }
 }
-.banner .content_img {
+.banner_block .banner .content_img {
   position: relative;
   float: right;
   right: 451px;
-  top: -123px;
+  top: -118px;
   width: 0px;
   height: 0px;
 }
-@media (max-width: 1150px) {
-  .banner .content_img {
+@media (max-width: 1250px) {
+  .banner_block .banner .content_img {
+    right: 275px;
+    top: -30px;
+  }
+}
+@media (max-width: 1000px) {
+  .banner_block .banner .content_img {
     display: none;
   }
 }
-.banner .content_img img {
+.banner_block .banner .content_img img {
   border-radius: 400px;
   border: 10px solid white;
   width: 481px;
   height: 481px;
+}
+@media (max-width: 1250px) {
+  .banner_block .banner .content_img img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .mt62 {
@@ -2579,6 +2755,11 @@ header .container .button .btn_book:hover {
 
 .mt84 {
   margin-top: 84px;
+}
+@media (max-width: 700px) {
+  .mt84 {
+    margin-top: 41px;
+  }
 }
 
 .services_navigation {
@@ -2697,6 +2878,12 @@ header .container .button .btn_book:hover {
   line-height: 19px;
   transition: 0.2s;
 }
+@media (max-width: 700px) {
+  .location_list button {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 .location_list button:hover {
   border: 1px solid rgb(20, 123, 181);
   cursor: pointer;
@@ -2722,6 +2909,11 @@ header .container .button .btn_book:hover {
 @media (max-width: 750px) {
   .photos_slider_wrap {
     padding: 0px 15px;
+  }
+}
+@media (max-width: 700px) {
+  .photos_slider_wrap {
+    margin-top: 27px;
   }
 }
 .photos_slider_wrap .next, .photos_slider_wrap .prev {
@@ -2800,7 +2992,7 @@ header .container .button .btn_book:hover {
 .advantages .left {
   width: 668px;
   height: 607px;
-  background: linear-gradient(184.53deg, #EFF5F8 41.27%, rgba(255, 255, 255, 0) 103.67%), url(../iimg/advantages/left.png);
+  background: linear-gradient(184.53deg, #EFF5F8 41.27%, rgba(255, 255, 255, 0) 103.67%), url(../img/advantages/left.png);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -2812,7 +3004,7 @@ header .container .button .btn_book:hover {
   .advantages .left {
     width: 100%;
     height: auto;
-    background: linear-gradient(184.53deg, #EFF5F8 50.27%, rgba(255, 255, 255, 0) 150.67%), url(../iimg/advantages/left.png);
+    background: linear-gradient(184.53deg, #EFF5F8 50.27%, rgba(255, 255, 255, 0) 150.67%), url(../img/advantages/left.png);
     background-position: center;
     background-size: cover;
     padding: 30px 20px;
@@ -2845,7 +3037,7 @@ header .container .button .btn_book:hover {
 .advantages .right .top {
   width: 688px;
   height: 293px;
-  background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 38.08%, rgba(255, 255, 255, 0) 71.71%), url(../iimg/advantages/right_top.png);
+  background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 38.08%, rgba(255, 255, 255, 0) 71.71%), url(../img/advantages/right_top.png);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -2855,7 +3047,7 @@ header .container .button .btn_book:hover {
   .advantages .right .top {
     width: 100%;
     height: auto;
-    background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 58.08%, rgba(255, 255, 255, 0) 71.71%), url(../iimg/advantages/right_top.png);
+    background: linear-gradient(127.5deg, rgba(239, 245, 248, 0.9) 58.08%, rgba(255, 255, 255, 0) 71.71%), url(../img/advantages/right_top.png);
     background-position: center;
     background-size: cover;
     padding: 30px 20px;
@@ -2943,7 +3135,7 @@ header .container .button .btn_book:hover {
   width: 1396px;
   height: 291px;
   text-align: center;
-  background-image: url(../iimg/usp_expert.png);
+  background-image: url(../img/usp_expert.png);
   background-size: cover;
   background-position: center;
   padding-top: 42px;
@@ -2973,6 +3165,7 @@ header .container .button .btn_book:hover {
 @media (max-width: 750px) {
   .usp_expert h4 {
     width: 100%;
+    font-weight: 500;
     padding: 0px 15px;
     font-size: 26px;
     line-height: 30px;
@@ -3015,6 +3208,13 @@ header .container .button .btn_book:hover {
   margin-top: 100px;
   background-color: rgb(239, 245, 248);
 }
+@media (max-width: 750px) {
+  .expert_tools {
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 55px;
+  }
+}
 .expert_tools h3 {
   font-weight: 400;
   font-size: 44px;
@@ -3025,7 +3225,9 @@ header .container .button .btn_book:hover {
   .expert_tools h3 {
     font-size: 24px;
     line-height: 28px;
-    padding: 20px 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
   }
 }
 .expert_tools .nav {
@@ -3034,6 +3236,7 @@ header .container .button .btn_book:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 30px;
 }
 @media (max-width: 1440px) {
   .expert_tools .nav {
@@ -3048,6 +3251,11 @@ header .container .button .btn_book:hover {
   -moz-column-gap: 6px;
        column-gap: 6px;
   row-gap: 6px;
+}
+@media (max-width: 750px) {
+  .expert_tools .buttons {
+    width: 100%;
+  }
 }
 .expert_tools .buttons button {
   height: 40px;
@@ -3095,6 +3303,11 @@ header .container .button .btn_book:hover {
     width: 100%;
     padding: 15px;
     height: auto;
+  }
+}
+@media (max-width: 750px) {
+  .expert_tools .content {
+    margin-top: 25px;
   }
 }
 .expert_tools .content img {
@@ -3191,6 +3404,11 @@ header .container .button .btn_book:hover {
 @media (max-width: 880px) {
   .usp_thank {
     text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .usp_thank {
+    margin-top: 50px;
   }
 }
 .usp_thank .mrt {
@@ -3309,8 +3527,13 @@ header .container .button .btn_book:hover {
     width: 98%;
   }
 }
+@media (max-width: 750px) {
+  .feedback_main {
+    margin-top: 50px;
+  }
+}
 .feedback_main .header {
-  width: 100%;
+  width: 300px;
 }
 .feedback_main .header h3 {
   font-weight: 400;
@@ -3318,6 +3541,18 @@ header .container .button .btn_book:hover {
   line-height: 52px;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 750px) {
+  .feedback_main .header h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: none;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .feedback_main .header h3 span {
+    display: none;
+  }
 }
 .feedback_main .header h3 a {
   color: #444444;
@@ -3345,6 +3580,28 @@ header .container .button .btn_book:hover {
   font-size: 60px;
   line-height: 70px;
   margin-bottom: 30px;
+}
+@media (max-width: 750px) {
+  .feedback_main .feedback_main_content .stars .num {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .feedback_main .feedback_main_content .stars .num img {
+    height: 24px;
+  }
+}
+.feedback_main .feedback_main_content .stars .num .visible_mob {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+}
+@media (max-width: 750px) {
+  .feedback_main .feedback_main_content .stars .num .visible_mob {
+    display: block;
+  }
 }
 .feedback_main .feedback_main_content .stars .percent {
   font-weight: 400;
@@ -3519,6 +3776,12 @@ header .container .button .btn_book:hover {
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 700px) {
+  .whywe_main h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .whywe_main_flex {
   width: 1623px;
   margin: 0 auto;
@@ -3684,6 +3947,11 @@ header .container .button .btn_book:hover {
   width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 1250px) {
+  .license_main {
+    width: 100%;
+  }
+}
 .license_main h4 {
   margin-top: 90px;
   font-weight: 400;
@@ -3707,6 +3975,11 @@ header .container .button .btn_book:hover {
   margin: 0 auto;
   width: 1620px;
   margin-top: 100px;
+}
+@media (max-width: 1650px) {
+  .map_main {
+    width: 100%;
+  }
 }
 .map_main .nav {
   display: flex;
@@ -3745,6 +4018,16 @@ header .container .button .btn_book:hover {
   padding: 20px 30px;
   border-radius: 10px;
 }
+@media (max-width: 1200px) {
+  .map_main .text_and_map .text {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .map_main .text_and_map .text {
+    width: 100%;
+  }
+}
 .map_main .text_and_map .text .text_element {
   padding: 20px 0px;
 }
@@ -3770,6 +4053,16 @@ header .container .button .btn_book:hover {
 }
 .map_main .text_and_map .map {
   width: 78%;
+}
+@media (max-width: 1200px) {
+  .map_main .text_and_map .map {
+    width: 58%;
+  }
+}
+@media (max-width: 700px) {
+  .map_main .text_and_map .map {
+    width: 100%;
+  }
 }
 .map_main .text_and_map .map img {
   border-radius: 10px;
