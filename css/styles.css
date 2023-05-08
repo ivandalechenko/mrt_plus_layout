@@ -2808,6 +2808,12 @@ header .container .button .btn_book:hover {
   -moz-column-gap: 6px;
        column-gap: 6px;
   margin-top: 38px;
+  row-gap: 10px;
+}
+@media (max-width: 900px) {
+  #services_navigation {
+    padding-bottom: 10px;
+  }
 }
 #services_navigation .services_navigation_element {
   width: 187px;
@@ -2821,6 +2827,17 @@ header .container .button .btn_book:hover {
   text-align: center;
   border-radius: 10px 10px 0px 0px;
   transition: 0.2s;
+}
+@media (max-width: 900px) {
+  #services_navigation .services_navigation_element {
+    border-radius: 10px;
+  }
+}
+@media (max-width: 420px) {
+  #services_navigation .services_navigation_element {
+    width: auto;
+    padding: 10px 20px;
+  }
 }
 #services_navigation .services_navigation_element:hover {
   cursor: pointer;

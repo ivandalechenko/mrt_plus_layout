@@ -2123,6 +2123,9 @@ header
     justify-content: center
     column-gap: 6px
     margin-top: 38px
+    row-gap: 10px
+    @media(max-width: 900px)
+        padding-bottom: 10px
     .services_navigation_element
         width: 187px
         padding: 20px 0px
@@ -2135,6 +2138,11 @@ header
         text-align: center
         border-radius: 10px 10px 0px 0px
         transition: .2s
+        @media(max-width: 900px)
+            border-radius: 10px
+        @media(max-width: 420px)
+            width: auto
+            padding: 10px 20px
     .services_navigation_element:hover
         cursor: pointer
         opacity: .7
