@@ -4259,11 +4259,22 @@ footer .left_col {
   padding-bottom: 50px;
   width: 76%;
 }
+@media (max-width: 1400px) {
+  footer .left_col {
+    width: 100%;
+  }
+}
 footer .left_col .left_col_inner {
-  width: 1300px;
+  width: 92%;
   color: white;
   margin-left: auto;
   padding-right: 80px;
+}
+@media (max-width: 1600px) {
+  footer .left_col .left_col_inner {
+    width: 98%;
+    padding-right: 20px;
+  }
 }
 footer .left_col .left_col_inner .first_row {
   width: 100%;
@@ -4271,6 +4282,14 @@ footer .left_col .left_col_inner .first_row {
   flex-wrap: wrap;
   padding-bottom: 40px;
   border-bottom: 1px solid rgb(84, 83, 83);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 20px;
+}
+@media (max-width: 550px) {
+  footer .left_col .left_col_inner .first_row {
+    justify-content: center;
+  }
 }
 footer .left_col .left_col_inner .first_row .first_col h4, footer .left_col .left_col_inner .first_row .second_col h4, footer .left_col .left_col_inner .first_row .third_col h4, footer .left_col .left_col_inner .first_row .fourth_col h4 {
   color: white;
@@ -4298,16 +4317,56 @@ footer .left_col .left_col_inner .first_row .first_col li a, footer .left_col .l
   color: #A6A6A6;
 }
 footer .left_col .left_col_inner .first_row .first_col {
-  width: 34%;
+  width: 33%;
+}
+@media (max-width: 1200px) {
+  footer .left_col .left_col_inner .first_row .first_col {
+    width: 58%;
+  }
+}
+@media (max-width: 550px) {
+  footer .left_col .left_col_inner .first_row .first_col {
+    width: 90%;
+  }
 }
 footer .left_col .left_col_inner .first_row .second_col {
-  width: 18%;
+  width: 17%;
+}
+@media (max-width: 1200px) {
+  footer .left_col .left_col_inner .first_row .second_col {
+    width: 38%;
+  }
+}
+@media (max-width: 550px) {
+  footer .left_col .left_col_inner .first_row .second_col {
+    width: 90%;
+  }
 }
 footer .left_col .left_col_inner .first_row .third_col {
-  width: 26%;
+  width: 25%;
+}
+@media (max-width: 1200px) {
+  footer .left_col .left_col_inner .first_row .third_col {
+    width: 58%;
+  }
+}
+@media (max-width: 550px) {
+  footer .left_col .left_col_inner .first_row .third_col {
+    width: 90%;
+  }
 }
 footer .left_col .left_col_inner .first_row .fourth_col {
-  width: 22%;
+  width: 21%;
+}
+@media (max-width: 1200px) {
+  footer .left_col .left_col_inner .first_row .fourth_col {
+    width: 38%;
+  }
+}
+@media (max-width: 550px) {
+  footer .left_col .left_col_inner .first_row .fourth_col {
+    width: 90%;
+  }
 }
 footer .left_col .left_col_inner .first_row .second_col a, footer .left_col .left_col_inner .first_row .third_col a, footer .left_col .left_col_inner .first_row .fourth_col a {
   display: block;
@@ -4325,6 +4384,15 @@ footer .left_col .left_col_inner .second_row {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid rgb(84, 83, 83);
+  justify-content: space-between;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (max-width: 1100px) {
+  footer .left_col .left_col_inner .second_row {
+    justify-content: space-around;
+  }
 }
 footer .left_col .left_col_inner .second_row .links {
   font-weight: 500;
@@ -4335,7 +4403,19 @@ footer .left_col .left_col_inner .second_row .links {
   flex-wrap: wrap;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  padding-right: 40px;
+  width: 29%;
+  row-gap: 20px;
+}
+@media (max-width: 1740px) {
+  footer .left_col .left_col_inner .second_row .links {
+    width: 21%;
+  }
+}
+@media (max-width: 1100px) {
+  footer .left_col .left_col_inner .second_row .links {
+    width: 90%;
+    justify-content: space-around;
+  }
 }
 footer .left_col .left_col_inner .second_row .links a {
   color: white;
@@ -4348,6 +4428,11 @@ footer .left_col .left_col_inner .second_row .payments {
   border-right: 1px solid rgb(84, 83, 83);
   border-left: 1px solid rgb(84, 83, 83);
 }
+@media (max-width: 1100px) {
+  footer .left_col .left_col_inner .second_row .payments {
+    border: none;
+  }
+}
 footer .left_col .left_col_inner .second_row .payments img {
   border-radius: 3px;
 }
@@ -4357,7 +4442,13 @@ footer .left_col .left_col_inner .second_row .sec {
   flex-wrap: wrap;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  padding-left: 40px;
+}
+@media (max-width: 900px) {
+  footer .left_col .left_col_inner .second_row .sec {
+    text-align: center;
+    row-gap: 20px;
+    justify-content: center;
+  }
 }
 footer .left_col .left_col_inner .second_row .sec a {
   width: 150px;
@@ -4375,12 +4466,43 @@ footer .left_col .left_col_inner .third_row {
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
+  row-gap: 20px;
 }
 footer .left_col .left_col_inner .third_row .logo {
   width: 16%;
 }
+@media (max-width: 1700px) {
+  footer .left_col .left_col_inner .third_row .logo {
+    width: 20%;
+  }
+}
+@media (max-width: 900px) {
+  footer .left_col .left_col_inner .third_row .logo {
+    width: 30%;
+  }
+}
+@media (max-width: 700px) {
+  footer .left_col .left_col_inner .third_row .logo {
+    width: 100%;
+  }
+}
 footer .left_col .left_col_inner .third_row .text {
   width: 84%;
+}
+@media (max-width: 1700px) {
+  footer .left_col .left_col_inner .third_row .text {
+    width: 80%;
+  }
+}
+@media (max-width: 900px) {
+  footer .left_col .left_col_inner .third_row .text {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  footer .left_col .left_col_inner .third_row .text {
+    width: 100%;
+  }
 }
 footer .left_col .left_col_inner .third_row .text p {
   font-weight: 400;
@@ -4398,11 +4520,27 @@ footer .right_col {
   width: 24%;
   background-color: rgb(4, 162, 162);
 }
+@media (max-width: 1400px) {
+  footer .right_col {
+    width: 100%;
+  }
+}
 footer .right_col .right_col_inner {
   width: 320px;
-  color: white;
-  text-align: right;
-  padding-left: 40px;
+}
+@media (max-width: 1400px) {
+  footer .right_col .right_col_inner {
+    width: 90%;
+    padding-bottom: 30px;
+    color: white;
+    text-align: right;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 700px) {
+  footer .right_col .right_col_inner {
+    padding-left: 20px;
+  }
 }
 footer .right_col .right_col_inner h4 {
   font-weight: 600;

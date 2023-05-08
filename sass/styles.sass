@@ -3139,17 +3139,28 @@ footer
         padding-top: 65px
         padding-bottom: 50px
         width: 76%
+        @media(max-width: 1400px)
+            width: 100%
+
         .left_col_inner
-            width: 1300px
+            width: 92%
             color: white
             margin-left: auto
             padding-right: 80px
+            @media(max-width: 1600px)
+                width: 98%
+                padding-right: 20px
+
             .first_row
                 width: 100%
                 display: flex
                 flex-wrap: wrap
                 padding-bottom: 40px
                 border-bottom: 1px solid rgba(84, 83, 83, 1)
+                column-gap: 15px
+                row-gap: 20px
+                @media(max-width: 550px)
+                    justify-content: center
                 .first_col, .second_col, .third_col, .fourth_col
                     h4
                         color: white
@@ -3173,14 +3184,29 @@ footer
                         a
                             color: #A6A6A6
                 .first_col
-                    width: 34%
+                    width: 33%
+                    @media(max-width: 1200px)
+                        width: 58%
+                    @media(max-width: 550px)
+                        width: 90%
                 .second_col
-                    width: 18%
+                    width: 17%
+                    @media(max-width: 1200px)
+                        width: 38%
+                    @media(max-width: 550px)
+                        width: 90%
                 .third_col
-                    width: 26%
+                    width: 25%
+                    @media(max-width: 1200px)
+                        width: 58%
+                    @media(max-width: 550px)
+                        width: 90%
                 .fourth_col
-                    width: 22%
-
+                    width: 21%
+                    @media(max-width: 1200px)
+                        width: 38%
+                    @media(max-width: 550px)
+                        width: 90%
                 .second_col, .third_col, .fourth_col
                     a
                         display: block
@@ -3196,7 +3222,11 @@ footer
                 display: flex
                 flex-wrap: wrap
                 border-bottom: 1px solid rgba(84, 83, 83, 1)
-
+                justify-content: space-between
+                row-gap: 20px
+                column-gap: 20px
+                @media(max-width: 1100px)
+                    justify-content: space-around
                 .links
                     font-weight: 500
                     font-size: 16px
@@ -3205,7 +3235,13 @@ footer
                     display: flex
                     flex-wrap: wrap
                     column-gap: 30px
-                    padding-right: 40px
+                    width: 29%
+                    row-gap: 20px
+                    @media(max-width: 1740px)
+                        width: 21%
+                    @media(max-width: 1100px)
+                        width: 90%
+                        justify-content: space-around
 
                     a
                         color: white
@@ -3215,14 +3251,20 @@ footer
                     padding: 12px 40px
                     border-right: 1px solid rgba(84, 83, 83, 1)
                     border-left: 1px solid rgba(84, 83, 83, 1)
+                    @media(max-width: 1100px)
+                        border: none
                     img
                         border-radius: 3px
+
                 .sec
                     margin: auto 0
                     display: flex
                     flex-wrap: wrap
                     column-gap: 30px
-                    padding-left: 40px
+                    @media(max-width: 900px)
+                        text-align: center
+                        row-gap: 20px
+                        justify-content: center
                     a
                         width: 150px
                         font-weight: 400
@@ -3237,10 +3279,25 @@ footer
                 display: flex
                 flex-wrap: wrap
                 padding-top: 30px
+                row-gap: 20px
                 .logo
                     width: 16%
+                    @media(max-width: 1700px)
+                        width: 20%
+                    @media(max-width: 900px)
+                        width: 30%
+
+                    @media(max-width: 700px)
+                        width: 100%
+
                 .text
                     width: 84%
+                    @media(max-width: 1700px)
+                        width: 80%
+                    @media(max-width: 900px)
+                        width: 70%
+                    @media(max-width: 700px)
+                        width: 100%
                     p
                         font-weight: 400
                         font-size: 14px
@@ -3255,11 +3312,18 @@ footer
         padding-top: 65px
         width: 24%
         background-color: rgba(4, 162, 162, 1)
+        @media(max-width: 1400px)
+            width: 100%
         .right_col_inner
             width: 320px
-            color: white
-            text-align: right
-            padding-left: 40px
+            @media(max-width: 1400px)
+                width: 90%
+                padding-bottom: 30px
+                color: white
+                text-align: right
+                padding-left: 40px
+            @media(max-width: 700px)
+                padding-left: 20px
             h4
                 font-weight: 600
                 font-size: 17px
