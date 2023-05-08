@@ -2113,6 +2113,57 @@ body {
   display: block;
 }
 
+#mobile_menu {
+  transition: 0.4s ease-out;
+  background-color: #444444;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+#mobile_menu #mobile_menu_cross {
+  position: absolute;
+  top: 40px;
+  right: 25px;
+}
+#mobile_menu #mobile_menu_cross .line {
+  display: block;
+  height: 5px;
+  width: 40px;
+  border-radius: 10px;
+  background: white;
+}
+#mobile_menu #mobile_menu_cross .line1 {
+  transform: rotate(45deg) translateX(3px);
+}
+#mobile_menu #mobile_menu_cross .line2 {
+  transform: rotate(-45deg) translateX(3px);
+}
+#mobile_menu ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  padding-left: 25px;
+}
+#mobile_menu ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 140%;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 8px 0px;
+  text-decoration: none;
+}
+
+.mobile_menu_hide {
+  left: -100% !important;
+}
+
 .burger_menu {
   background: #444444;
   padding: 15px 15px;
@@ -2127,33 +2178,6 @@ body {
   color: #ffffff;
   font-size: 22px;
 }
-.burger_menu .checkbox {
-  position: absolute;
-  display: block;
-  height: 50px;
-  width: 50px;
-  top: 4px;
-  right: 4px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-}
-.burger_menu input[type=checkbox]:checked ~ .menu-items {
-  transform: translateX(0);
-}
-.burger_menu input[type=checkbox]:checked ~ .burger .line1 {
-  transform: rotate(45deg);
-}
-.burger_menu input[type=checkbox]:checked ~ .burger .line2 {
-  transform: scaleY(0);
-}
-.burger_menu input[type=checkbox]:checked ~ .burger .line3 {
-  transform: rotate(-45deg);
-}
-.burger_menu input[type=checkbox]:checked ~ .links {
-  transition: 1s ease-out;
-  height: 100vh;
-}
 .burger_menu .links {
   height: 0px;
   overflow: hidden;
@@ -2162,32 +2186,39 @@ body {
 .burger_menu .links a {
   display: block;
 }
-.burger_menu .burger {
+.burger_menu .burger_text {
+  color: #ffffff;
+  font-size: 22px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.burger_menu #burger {
   display: block;
   height: 26px;
   width: 32px;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 94px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.burger_menu .burger .line {
+.burger_menu #burger .line {
   display: block;
   height: 4px;
   width: 100%;
   border-radius: 10px;
   background: white;
 }
-.burger_menu .burger .line1 {
+.burger_menu #burger .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-.burger_menu .burger .line2 {
+.burger_menu #burger .line2 {
   transition: transform 0.2s ease-in-out;
 }
-.burger_menu .burger .line3 {
+.burger_menu #burger .line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
@@ -2207,6 +2238,12 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
+}
+@media (max-width: 500px) {
+  #cookie {
+    width: 90%;
+    right: 5%;
+  }
 }
 #cookie a {
   color: #444444;

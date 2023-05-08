@@ -1568,6 +1568,51 @@ body
             display: block
 
 // for index.html below
+#mobile_menu
+    transition: .4s ease-out
+    background-color: #444444
+    color: white
+    position: absolute
+    top: 0px
+    left: 0px
+    z-index: 10
+    width: 100%
+    padding-right: 25px
+    padding-top: 25px
+
+    #mobile_menu_cross
+        position: absolute
+        top: 40px
+        right: 25px
+        .line
+            display: block
+            height: 5px
+            width: 40px
+            border-radius: 10px
+            background: white
+        .line1
+            transform: rotate(45deg) translateX(3px)
+        .line2
+            transform: rotate(-45deg) translateX(3px)
+
+    ul
+        list-style: none
+        text-align: left
+        padding: 0
+        margin: 0
+        padding-left: 25px
+        li
+            a
+                color: rgb(255, 255, 255)
+                font-size: 18px
+                line-height: 140%
+                display: inline-block
+                text-transform: uppercase
+                padding: 8px 0px
+                text-decoration: none
+
+.mobile_menu_hide
+    left: -100% !important
 
 .burger_menu
     background: #444444
@@ -1578,45 +1623,28 @@ body
     .phone
         color: #ffffff
         font-size: 22px
-    .checkbox
-        position: absolute
-        display: block
-        height: 50px
-        width: 50px
-        top: 4px
-        right: 4px
-        z-index: 5
-        opacity: 0
-        cursor: pointer
-    input[type="checkbox"]:checked ~ .menu-items
-        transform: translateX(0)
 
-    input[type="checkbox"]:checked ~ .burger .line1
-        transform: rotate(45deg)
-
-    input[type="checkbox"]:checked ~ .burger .line2
-        transform: scaleY(0)
-
-    input[type="checkbox"]:checked ~ .burger .line3
-        transform: rotate(-45deg)
-
-    input[type="checkbox"]:checked ~ .links
-        transition: 1s ease-out
-        height: 100vh
     .links
         height: 0px
         overflow: hidden
         transition: 1s ease-out
         a
             display: block
-    .burger
+    .burger_text
+        color: #ffffff
+        font-size: 22px
+        position: absolute
+        top: 15px
+        right: 15px
+
+    #burger
 
         display: block
         height: 26px
         width: 32px
         position: absolute
         top: 15px
-        right: 15px
+        right: 94px
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -1650,6 +1678,9 @@ body
     font-weight: 400
     font-size: 17px
     line-height: 20px
+    @media (max-width: 500px)
+        width: 90%
+        right: 5%
     a
         color: #444444
         text-decoration: underline

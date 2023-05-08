@@ -335,7 +335,7 @@ $('.banner_main_slider').slick({
     arrows: true,
     focusOnSelect: true,
     autoplay: true,
-    dots: true,
+    dots: false,
     autoplaySpeed: 4000,
     prevArrow: "<img src='img/right_arrow.svg' class='prev' alt='1'>",
     nextArrow: "<img src='img/left_arrow.svg' class='next' alt='2'>",
@@ -356,6 +356,14 @@ $('#location_btn').on('click', function () {
 $('#cookie_accept').on('click', function () {
     var block = $("#cookie");
     block.addClass("dnone");
+});
+
+
+$('#burger').on('click', function () {
+    $("#mobile_menu").removeClass('mobile_menu_hide');
+});
+$('#mobile_menu_cross').on('click', function () {
+    $("#mobile_menu").addClass('mobile_menu_hide');
 });
 
 
