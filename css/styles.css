@@ -128,7 +128,6 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #444444;
-  padding-bottom: 200px;
 }
 
 .row {
@@ -4319,6 +4318,11 @@ footer {
   flex-wrap: wrap;
   margin-top: 100px;
 }
+@media (max-width: 1400px) {
+  footer {
+    padding: 30px 15px;
+  }
+}
 footer .left_col {
   padding-top: 65px;
   padding-bottom: 50px;
@@ -4326,7 +4330,10 @@ footer .left_col {
 }
 @media (max-width: 1400px) {
   footer .left_col {
+    order: 2;
     width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 footer .left_col .left_col_inner {
@@ -4341,6 +4348,11 @@ footer .left_col .left_col_inner {
     padding-right: 20px;
   }
 }
+@media (max-width: 1400px) {
+  footer .left_col .left_col_inner {
+    padding-right: 0px;
+  }
+}
 footer .left_col .left_col_inner .first_row {
   width: 100%;
   display: flex;
@@ -4350,6 +4362,11 @@ footer .left_col .left_col_inner .first_row {
   -moz-column-gap: 15px;
        column-gap: 15px;
   row-gap: 20px;
+}
+@media (max-width: 1200px) {
+  footer .left_col .left_col_inner .first_row {
+    border-bottom: none;
+  }
 }
 @media (max-width: 550px) {
   footer .left_col .left_col_inner .first_row {
@@ -4381,6 +4398,13 @@ footer .left_col .left_col_inner .first_row .first_col li, footer .left_col .lef
 footer .left_col .left_col_inner .first_row .first_col li a, footer .left_col .left_col_inner .first_row .second_col li a, footer .left_col .left_col_inner .first_row .third_col li a, footer .left_col .left_col_inner .first_row .fourth_col li a {
   color: #A6A6A6;
 }
+@media (max-width: 1200px) {
+  footer .left_col .left_col_inner .first_row .first_col, footer .left_col .left_col_inner .first_row .second_col, footer .left_col .left_col_inner .first_row .third_col, footer .left_col .left_col_inner .first_row .fourth_col {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(84, 83, 83);
+    padding-top: 10px;
+  }
+}
 footer .left_col .left_col_inner .first_row .first_col {
   width: 33%;
 }
@@ -4391,7 +4415,8 @@ footer .left_col .left_col_inner .first_row .first_col {
 }
 @media (max-width: 550px) {
   footer .left_col .left_col_inner .first_row .first_col {
-    width: 90%;
+    width: 96%;
+    order: 1;
   }
 }
 footer .left_col .left_col_inner .first_row .second_col {
@@ -4404,7 +4429,8 @@ footer .left_col .left_col_inner .first_row .second_col {
 }
 @media (max-width: 550px) {
   footer .left_col .left_col_inner .first_row .second_col {
-    width: 90%;
+    width: 56%;
+    order: 3;
   }
 }
 footer .left_col .left_col_inner .first_row .third_col {
@@ -4417,7 +4443,8 @@ footer .left_col .left_col_inner .first_row .third_col {
 }
 @media (max-width: 550px) {
   footer .left_col .left_col_inner .first_row .third_col {
-    width: 90%;
+    width: 96%;
+    order: 2;
   }
 }
 footer .left_col .left_col_inner .first_row .fourth_col {
@@ -4430,7 +4457,8 @@ footer .left_col .left_col_inner .first_row .fourth_col {
 }
 @media (max-width: 550px) {
   footer .left_col .left_col_inner .first_row .fourth_col {
-    width: 90%;
+    width: 38%;
+    order: 4;
   }
 }
 footer .left_col .left_col_inner .first_row .second_col a, footer .left_col .left_col_inner .first_row .third_col a, footer .left_col .left_col_inner .first_row .fourth_col a {
@@ -4454,6 +4482,11 @@ footer .left_col .left_col_inner .second_row {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+@media (max-width: 1740px) {
+  footer .left_col .left_col_inner .second_row {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 1100px) {
   footer .left_col .left_col_inner .second_row {
     justify-content: space-around;
@@ -4473,13 +4506,19 @@ footer .left_col .left_col_inner .second_row .links {
 }
 @media (max-width: 1740px) {
   footer .left_col .left_col_inner .second_row .links {
-    width: 21%;
+    width: 40%;
   }
 }
 @media (max-width: 1100px) {
   footer .left_col .left_col_inner .second_row .links {
     width: 90%;
     justify-content: space-around;
+  }
+}
+@media (max-width: 550px) {
+  footer .left_col .left_col_inner .second_row .links {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
 }
 footer .left_col .left_col_inner .second_row .links a {
@@ -4492,14 +4531,36 @@ footer .left_col .left_col_inner .second_row .payments {
   padding: 12px 40px;
   border-right: 1px solid rgb(84, 83, 83);
   border-left: 1px solid rgb(84, 83, 83);
+  display: flex;
+  flex-wrap: wrap;
 }
-@media (max-width: 1100px) {
+@media (max-width: 550px) {
   footer .left_col .left_col_inner .second_row .payments {
     border: none;
+    justify-content: center;
   }
 }
 footer .left_col .left_col_inner .second_row .payments img {
   border-radius: 3px;
+  width: 78px;
+  height: 37px;
+  margin: auto 0;
+}
+footer .left_col .left_col_inner .second_row .payments .pol {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #A6A6A6;
+  margin: auto;
+  padding: 15px;
+}
+@media (max-width: 1400px) {
+  footer .left_col .left_col_inner .second_row .payments .pol {
+    display: block;
+  }
 }
 footer .left_col .left_col_inner .second_row .sec {
   margin: auto 0;
@@ -4589,19 +4650,30 @@ footer .right_col {
 }
 @media (max-width: 1400px) {
   footer .right_col {
+    text-align: left;
+    background-color: rgb(68, 68, 68);
     width: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
+    order: 1;
   }
 }
 footer .right_col .right_col_inner {
-  width: 320px;
+  width: 80%;
 }
 @media (max-width: 1400px) {
   footer .right_col .right_col_inner {
     width: 90%;
     padding-bottom: 30px;
     color: white;
-    text-align: right;
-    padding-left: 40px;
+    text-align: left;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  footer .right_col .right_col_inner {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(84, 83, 83);
   }
 }
 @media (max-width: 700px) {
@@ -4640,6 +4712,11 @@ footer .right_col .right_col_inner .pol {
   padding-top: 24px;
   color: #90E9E9;
   display: inline-block;
+}
+@media (max-width: 1400px) {
+  footer .right_col .right_col_inner .pol {
+    display: none;
+  }
 }
 footer .right_col .right_col_inner .pol:hover {
   text-decoration: none;
