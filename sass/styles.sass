@@ -2158,7 +2158,7 @@ header
         margin: 0 auto
         border-radius: 10px
         @media(max-width: 1450px)
-            width: 96%
+            width: 94%
         @media(max-width: 700px)
             padding: 20px
         .spec
@@ -2275,6 +2275,7 @@ header
     margin-top: 28px
     column-gap: 6px
     row-gap: 12px
+    padding: 0px 15px
     button
         background-color: transparent
         padding: 10px 22px
@@ -2307,7 +2308,7 @@ header
         width: 100%
         padding: 0px 80px
     @media(max-width: 750px)
-        padding: 0px 15px
+        padding: 0px 0px
     @media (max-width: 700px)
         margin-top: 27px
     .next, .prev
@@ -2959,10 +2960,13 @@ header
         flex-wrap: wrap
         justify-content: space-between
         row-gap: 30px
+        padding: 0px 15px
         @media(max-width: 1680px)
             width: 100%
         @media(max-width: 700px)
             row-gap: 0px
+        @media(max-width: 350px)
+            padding: 0px 10px
 
         &_element:last-child
             @media(max-width: 700px)
@@ -2976,12 +2980,12 @@ header
         &_element
             width: 49%
             display: flex
-            flex-wrap: wrap
             column-gap: 15px
             justify-content: space-between
 
             @media(max-width: 1300px)
                 width: 80%
+                flex-wrap: wrap
                 margin: 0px auto
             @media(max-width: 1100px)
                 width: 100%
@@ -3012,8 +3016,13 @@ header
                     margin: auto
                     text-align: left
                     padding-left: 30px
+
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 19px
                     @media(max-width: 700px)
                         display: block
+
                     @media(max-width: 450px)
                         width: 60%
                         padding-left: 10px
@@ -3090,13 +3099,11 @@ header
     margin: 0 auto
     width: 1620px
     margin-top: 100px
-    padding: 15px
+    padding: 0px 20px
     @media (max-width: 1650px)
         width: 100%
     @media (max-width: 700px)
         margin-top: 70px
-        padding: 0px
-
     .nav
         display: flex
         flex-wrap: wrap
@@ -3143,8 +3150,7 @@ header
             @media (max-width: 1400px)
                 width: 40%
             @media (max-width: 700px)
-                width: 96%
-                margin: 0 auto
+                width: 100%
             .text_element
                 padding: 20px 0px
             .text_element:not(:last-child)
@@ -3168,12 +3174,13 @@ header
             border-radius: 10px
             overflow: hidden
             @media (max-width: 1400px)
-                width: 58%
+                width: 57%
+            @media (max-width: 1000px)
+                width: 56%
             @media (max-width: 700px)
                 width: 100%
                 border-radius: 0
                 height: 500px
-
             img
                 border-radius: 10px
                 width: 100%

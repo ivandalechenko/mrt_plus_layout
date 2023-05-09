@@ -2856,7 +2856,7 @@ header .container .button .btn_book:hover {
 }
 @media (max-width: 1450px) {
   #services .info {
-    width: 96%;
+    width: 94%;
   }
 }
 @media (max-width: 700px) {
@@ -3020,6 +3020,7 @@ header .container .button .btn_book:hover {
   -moz-column-gap: 6px;
        column-gap: 6px;
   row-gap: 12px;
+  padding: 0px 15px;
 }
 .location_list button {
   background-color: transparent;
@@ -3063,7 +3064,7 @@ header .container .button .btn_book:hover {
 }
 @media (max-width: 750px) {
   .photos_slider_wrap {
-    padding: 0px 15px;
+    padding: 0px 0px;
   }
 }
 @media (max-width: 700px) {
@@ -3985,6 +3986,7 @@ header .container .button .btn_book:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
+  padding: 0px 15px;
 }
 @media (max-width: 1680px) {
   .whywe_main_flex {
@@ -3994,6 +3996,11 @@ header .container .button .btn_book:hover {
 @media (max-width: 700px) {
   .whywe_main_flex {
     row-gap: 0px;
+  }
+}
+@media (max-width: 350px) {
+  .whywe_main_flex {
+    padding: 0px 10px;
   }
 }
 @media (max-width: 700px) {
@@ -4011,7 +4018,6 @@ header .container .button .btn_book:hover {
 .whywe_main_flex_element {
   width: 49%;
   display: flex;
-  flex-wrap: wrap;
   -moz-column-gap: 15px;
        column-gap: 15px;
   justify-content: space-between;
@@ -4019,6 +4025,7 @@ header .container .button .btn_book:hover {
 @media (max-width: 1300px) {
   .whywe_main_flex_element {
     width: 80%;
+    flex-wrap: wrap;
     margin: 0px auto;
   }
 }
@@ -4071,6 +4078,9 @@ header .container .button .btn_book:hover {
   margin: auto;
   text-align: left;
   padding-left: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
 }
 @media (max-width: 700px) {
   .whywe_main_flex_element .img_and_text p {
@@ -4188,7 +4198,7 @@ header .container .button .btn_book:hover {
   margin: 0 auto;
   width: 1620px;
   margin-top: 100px;
-  padding: 15px;
+  padding: 0px 20px;
 }
 @media (max-width: 1650px) {
   .map_main {
@@ -4198,7 +4208,6 @@ header .container .button .btn_book:hover {
 @media (max-width: 700px) {
   .map_main {
     margin-top: 70px;
-    padding: 0px;
   }
 }
 .map_main .nav {
@@ -4263,8 +4272,7 @@ header .container .button .btn_book:hover {
 }
 @media (max-width: 700px) {
   .map_main .text_and_map .text {
-    width: 96%;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 .map_main .text_and_map .text .text_element {
@@ -4297,7 +4305,12 @@ header .container .button .btn_book:hover {
 }
 @media (max-width: 1400px) {
   .map_main .text_and_map .map {
-    width: 58%;
+    width: 57%;
+  }
+}
+@media (max-width: 1000px) {
+  .map_main .text_and_map .map {
+    width: 56%;
   }
 }
 @media (max-width: 700px) {
