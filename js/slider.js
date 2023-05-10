@@ -393,6 +393,7 @@ $('.services_navigation_element').on('click', function () {
 
 
 $('.city_photos_navigation_element').on('click', function () {
+    $('.photos_slider').slick('refresh');
     var $set = $('#city_photos_navigation .city_photos_navigation_element');
     var n = $set.index(this);
     var elements = $('#city_photos .city_photos_element');
@@ -416,7 +417,10 @@ $('.tools_navigation_element').on('click', function () {
 
 
 
-
+$('.mobile_menu_expander').on('click', function () {
+    var ul = $(this).next();
+    ul.toggleClass('dnone')
+});
 
 
 

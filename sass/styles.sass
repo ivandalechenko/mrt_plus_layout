@@ -1594,6 +1594,12 @@ body
     padding-top: 25px
     height: 100vh
     overflow: auto
+    .mobile_menu_expander
+        background: none
+        padding: 14px
+        padding-left: 20px
+        img
+            width: 20px
     #mobile_menu_cross
         position: absolute
         top: 40px
@@ -1622,7 +1628,7 @@ body
                 line-height: 140%
                 display: inline-block
                 text-transform: uppercase
-                padding: 8px 0px
+                padding: 12px 0px
                 text-decoration: none
 
 .mobile_menu_hide
@@ -1960,6 +1966,55 @@ header
         column-gap: 30px
         @media (max-width: 1100px)
             display: none
+
+        ul
+            display: flex
+            column-gap: 30px
+            li
+                list-style-type: none
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 16px
+                text-transform: uppercase
+                ul
+                    display: none
+                    width: 0px
+                    height: 0px
+            li:hover
+                ul
+                    display: block
+                    position: relative
+                    top: 10px
+                    z-index: 5
+                    .wrapper
+                        width: 300px
+                        height: auto
+                        box-shadow: 0px 0px 10px gray
+                        background-color: white
+                        ul
+                            display: none
+                            position: relative
+                            top: -55px
+                            left: 280px
+                            height: 0px
+                            width: 0px
+                        a
+                            display: block
+                            padding: 20px
+                        a:hover
+                            opacity: 1
+                            color: white
+                            background-color: #0070AF
+                        li:hover
+                            ul
+                                display: block
+                                .wrapper
+                                    width: 300px
+                                    height: auto
+                                    box-shadow: 0px 0px 10px gray
+                                    background-color: white
+
         a
             font-family: 'Roboto'
             font-style: normal
@@ -1972,39 +2027,6 @@ header
             padding: 20px 0px
         a:hover
             opacity: .7
-        .dop_links_element
-            width: 0px
-            height: 0px
-            position: relative
-            top: 10px
-            z-index: 5
-            .dop_links_element_inner
-                display: none
-                width: fit-content
-                margin-left: -18px
-                min-width: 202px
-                border-radius: 10px
-                box-shadow: 0px 0px 10px gray
-                height: auto
-                background-color: white
-                a
-                    display: block
-                    padding: 14px 20px 14px
-                a:first-child
-                    padding: 20px 20px 14px
-                    border-radius: 10px 10px 0px 0px
-                a:last-child
-                    padding: 14px 20px 20px
-                    border-radius: 0px 0px 10px 10px
-                a:hover
-                    background-color: #0070AF
-                    color: white
-                    opacity: 1
-        .links_element:hover
-            cursor: hover
-            .dop_links_element_inner
-                display: block
-
 .banner_block
     @media(max-width: 1000px)
         display: none
@@ -3080,10 +3102,12 @@ header
                     line-height: 19px
                     @media(max-width: 700px)
                         display: block
+                        padding-bottom: 25px
 
                     @media(max-width: 450px)
                         width: 60%
                         padding-left: 10px
+                        padding-right: 20px
 
             &_content
                 width: 521px
@@ -3254,6 +3278,8 @@ footer
     margin-top: 100px
     @media(max-width: 1400px)
         padding: 30px 15px
+    @media(max-width: 700px)
+        margin-top: 0px
     .left_col
         padding-top: 65px
         padding-bottom: 50px

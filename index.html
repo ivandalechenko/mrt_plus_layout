@@ -31,40 +31,35 @@
         </div>
         <ul>
             <li class=""><a href="/">ГЛАВНАЯ</a></li>
-            <li><a href="/uslugi/">Услуги</a>
-                <ul>
-                    <li><a href="/uslugi/diagnostika/">Диагностика</a>
-                        <ul>
+            <li><a href="/uslugi/">Услуги</a> <button class="mobile_menu_expander"><img
+                        src="img/expand_arrow.svg"></button>
+                <ul class="dnone">
+                    <li><a href="/uslugi/diagnostika/">Диагностика</a> <button class="mobile_menu_expander"><img
+                                src="img/expand_arrow.svg"></button>
+                        <ul class="dnone">
                             <li><a href="/uslugi/diagnostika/mrt/">МРТ</a>
-                                <ul></ul>
                             </li>
                             <li><a href="/uslugi/diagnostika/skt/">СКТ</a>
-                                <ul></ul>
                             </li>
                             <li><a href="/uslugi/diagnostika/uzi/">УЗИ</a>
-                                <ul></ul>
                             </li>
                         </ul>
                     </li>
                     <li><a href="/uslugi/protsedurnyy-kabinet/">Процедурный кабинет</a>
-                        <ul></ul>
                     </li>
                     <li><a href="/uslugi/priem-vrachey/">Прием врачей</a>
-                        <ul></ul>
                     </li>
                     <li><a href="/uslugi/analizy/">Анализы</a>
-                        <ul></ul>
                     </li>
                 </ul>
             </li>
             <li><a href="/doctors/">Врачи</a>
-                <ul></ul>
             </li>
             <li><a href="/tseny/">Цены</a>
-                <ul></ul>
             </li>
-            <li><a href="/skidki-akcii-news/">Акции</a>
-                <ul>
+            <li><a href="/skidki-akcii-news/">Акции</a><button class="mobile_menu_expander"><img
+                        src="img/expand_arrow.svg"></button>
+                <ul class="dnone">
                     <li><a href="/skidki-akcii-news/priem-mammologa-onkologa-i-uzi-molochnyh-zhelez-s-vygodoy/">Прием
                             маммолога-онколога и узи молочных желез с выгодой</a>
                         <ul></ul>
@@ -158,73 +153,85 @@
     <div class="links_and_search">
         <div class="container">
             <div class="links">
-                <div class="links_element">
-                    <a href="#">
-                        О центре
-                    </a>
-                </div>
-                <div class="links_element">
-                    <a href="#">
-                        Услуги
-                    </a>
-                    <div class="dop_links_element">
-                        <div class="dop_links_element_inner">
-                            <a href="#">
-                                Диагностика
-                            </a>
-                            <a href="#"> Процедурный кабинет </a>
-                            <a href="#">
-                                Приём врачей
-                            </a>
-                            <a href="#">
-                                Анализы
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="links_element">
-                    <a href="#">
-                        Анализы
-                    </a>
-                </div>
-                <div class="links_element">
-                    <a href="#">
-                        Врачи
-                    </a>
-                </div>
-                <div class="links_element">
-                    <a href="#">
-                        Цены
-                    </a>
-                </div>
-                <div class="links_element">
-                    <a href="#">
-                        Акции
-                    </a>
-                    <div class="dop_links_element">
-                        <div class="dop_links_element_inner">
-                            <a href="#">
-                                МРТ
-                            </a>
-                            <a href="#">
-                                СМТ
-                            </a>
-                            <a href="#">
-                                УЗИ
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="links_element">
-                    <a href="#">
-                        Отзывы
-                    </a>
-                </div>
-                <div class="links_element">
-                    <a href="#">
-                        Контакты
-                    </a>
-                </div>
+                <ul>
+                    <li>
+                        <a href="#">О центре</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                        <ul>
+                            <div class="wrapper">
+                                <li>
+                                    <a href="#">Диагностика</a>
+                                    <ul>
+                                        <div class="wrapper">
+                                            <li>
+                                                <a href="#">МРТ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">СКТ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">УЗИ</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Процедурный кабинет</a>
+                                </li>
+                                <li>
+                                    <a href="#">Прием врачей</a>
+                                </li>
+                                <li>
+                                    <a href="#">Анализы</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Врачи</a>
+                    </li>
+                    <li>
+                        <a href="#">Цены</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                        <ul>
+                            <div class="wrapper">
+                                <li><a
+                                        href="/skidki-akcii-news/priem-mammologa-onkologa-i-uzi-molochnyh-zhelez-s-vygodoy/">Прием
+                                        маммолога-онколога и узи молочных желез с выгодой</a>
+                                </li>
+                                <li><a href="/skidki-akcii-news/mrt-vsego-pozvonochnika-so-skidkoy-25-yanvar/">МРТ всего
+                                        позвоночника со скидкой 25%</a>
+                                </li>
+                                <li><a href="/skidki-akcii-news/skidki-10-sotsialnym-gruppam-grazhdan-yanvar/">Скидки
+                                        -5% социальным
+                                        группам граждан</a>
+                                </li>
+                                <li><a href="/skidki-akcii-news/zhenskiy-kompleks-s-vygodoy-400-rub/">Женский комплекс с
+                                        выгодой 400
+                                        руб.</a>
+                                </li>
+                                <li><a href="/skidki-akcii-news/priem-vracha-terapevta-i-analizy-so-skidkoy-787-r/">Прием
+                                        врача
+                                        терапевта и анализы со скидкой 787 р.</a>
+                                </li>
+                                <li><a href="/skidki-akcii-news/vse-vklyucheno-skidka-25/">«Все включено» Скидка 25% на
+                                        МРТ
+                                        головного мозга + МРТ артерии</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
             </div>
             <div class="search">
                 <img src="img/eye.svg" class="eye" />
